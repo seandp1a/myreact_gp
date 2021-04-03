@@ -1,0 +1,150 @@
+// ----------- ProductsBanner -------------
+.products-list .container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.products-list .products-banner-block img {
+  max-height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.products-list .products-banner-block img {
+  margin: 0 auto;
+}
+
+.products-list .products-banner-block h1 {
+  font-size: 38px;
+  top: 30%;
+}
+
+.products-list .products-banner-block a {
+  color: white;
+  font-size: 14px;
+  bottom: 40%;
+  padding: 13.5px 35px 13.5px 35px;
+}
+
+@media screen and (max-width: 490px) {
+  // This is to make the words "來嘗試我們的" go to the next line
+  .products-list .products-banner-block span {
+    display: block;
+  }
+  .products-list .products-banner-block img {
+    height: 200px;
+  }
+  .products-list .products-banner-block h1 {
+    top: 20%;
+    font-size: 30px;
+    text-align: center;
+  }
+  .products-list .products-banner-block a {
+    bottom: 5%;
+  }
+}
+
+// ----------- Sidebar -------------
+.products-list .sidebar {
+  background-color: #f5e4d7;
+  height: 100%;
+}
+
+.products-list .sidebar .products-item-title {
+  font-weight: normal;
+  color: #403837;
+}
+
+.products-list .radio-block {
+  border-bottom: 2px solid #e4955a;
+}
+
+.products-list .primary-select {
+  width: 100%;
+}
+
+// ----------- ProductsGrid & Product-------------
+.products-list .top-sort-bar {
+  background-color: #403837;
+  color: white;
+}
+
+.products-list .product-row {
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.products-list .product {
+  height: 400px;
+  width: 210px;
+  transition: all 300ms;
+}
+
+.products-list .product:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.products-list .product img {
+  max-height: 310px;
+}
+
+.products-list .product .product-text-block {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-list .product h6 {
+  color: #6b7b71;
+  font-size: 12px;
+}
+
+.products-list .product h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.products-list .product h5 {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 490px) {
+  .products-list .product {
+    height: 335px;
+    width: 150px;
+  }
+  .products-list .product img {
+    max-height: 250px;
+  }
+}
+
+// ----------- ProductsPagnation -----------
+.products-list .page-link {
+  color: #707070;
+  background-color: #dcdcdc;
+  border: 2px solid white;
+}
+
+.products-list .page-item.active .page-link {
+  border: 2px solid white;
+}
+
+.products-list .page-item.disabled .page-link {
+  border: 2px solid white;
+  background-color: #e0e0e0;
+  color: white;
+}
+
+.products-list .mobile-page-select {
+  background-color: #e4955a;
+  color: white;
+  border-bottom: none;
+}
+
+.products-list .mobile-total-pages {
+  color: #e4955a;
+  font-weight: bold;
+}

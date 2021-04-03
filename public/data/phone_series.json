@@ -1,0 +1,18 @@
+[
+    {"id":"1","series_name_chn":"純透明","series_name_eng":"transparent","price":"700"},
+    {"id":"2","series_name_chn":"動物","series_name_eng":"animals","price":"900"},
+    {"id":"3","series_name_chn":"幾何線條","series_name_eng":"polygon","price":"800"},
+    {"id":"4","series_name_chn":"食物","series_name_eng":"food","price":"830"},
+    {"id":"5","series_name_chn":"迷彩","series_name_eng":"camo","price":"760"},
+    {"id":"6","series_name_chn":"仿真大理石","series_name_eng":"marble","price":"860"},
+    {"id":"7","series_name_chn":"語錄","series_name_eng":"words","price":"850"},
+    {"id":"8","series_name_chn":"國旗","series_name_eng":"flags","price":"850"},
+    {"id":"9","series_name_chn":"太空","series_name_eng":"space","price":"920"},
+    {"id":"10","series_name_chn":"東方風","series_name_eng":"eastern","price":"900"},
+    {"id":"11","series_name_chn":"友菘","series_name_eng":"UsongRat","price":"950"},
+    {"id":"12","series_name_chn":"地瓜球","series_name_eng":"Sweet Potato Ball","price":"820"},
+    {"id":"13","series_name_chn":"迪士尼皮克斯","series_name_eng":"Pixar","price":"980"},
+    {"id":"14","series_name_chn":"不二馬大叔","series_name_eng":"Bu2ma","price":"940"},
+    {"id":"15","series_name_chn":"別家門市","series_name_eng":"Other Store","price":"780"},
+    {"id":"16","series_name_chn":"客製化","series_name_eng":"customized","price":"1000"}
+    ]

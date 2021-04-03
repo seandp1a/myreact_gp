@@ -1,0 +1,32 @@
+.customize-step-one img {
+  width: 250px;
+  height: 480px;
+}
+
+.customize-step-one .primary-select {
+  width: 100%;
+}
+
+.customize-step-one .price-block {
+  color: #707070;
+  font-size: 19px;
+  border-top: 2px solid #e2e2e2;
+}
+
+.customize-step-one a .btn.md {
+  color: white;
+  font-size: 14px;
+  bottom: 40%;
+  padding: 13.5px 40px 13.5px 45px !important;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 490px) {
+  .customize-step-one a .btn.md {
+    padding: 13.5px 20px 13.5px 25px !important;
+  }
+  .customize-step-one img {
+    width: 220px;
+    height: 420px;
+  }
+}

@@ -1,0 +1,1927 @@
+// $MYPORT: 'http://localhost:3000/myreact_gp/';
+$MYPORT: 'https://seandp1a.github.io/myreact_gp/';
+
+// 跟nav距離
+.home-content {
+  margin-top: 90px;
+}
+
+// 所有h1的字
+.home-content h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+// ------ NewHomeBanner ------
+.NewHomeBanner-container {
+  height: 86vh;
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url($MYPORT + 'img/home/newhomebanner.gif');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0px 0px 50px #fff;
+  //   color: transparent;
+  //   -webkit-text-stroke: 0.8px rgb(226, 226, 226);
+  //   text-stroke: 0.8px rgb(226, 226, 226);
+  //   white-space: nowrap;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 50%;
+  margin-top: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+.demo a:hover {
+  color: #fff;
+  text-decoration: none;
+
+  opacity: 0.5;
+}
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// hero-img
+.banner {
+  background: url($MYPORT + 'img/home/hero-img-bg.png');
+  width: 100%;
+  background-size: cover;
+}
+
+.hero-img img {
+  width: 100%;
+  background-size: cover;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+
+.hero-img-txt {
+  font-family: TCR;
+  color: white;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+// ------關於我們------
+.aboutus {
+  background-color: #fbf6ee;
+}
+
+.aboutus-bg img {
+  width: 100%;
+  background-size: cover;
+}
+
+.aboutus-bg-mobile img {
+  display: none;
+}
+
+.aboutus-txt {
+  text-align: left;
+  left: 60%;
+  top: 50%;
+  transform: translate(-60%, -50%);
+}
+
+.aboutus-txt h1 {
+  font-weight: 700;
+  color: #af7960;
+}
+
+.aboutus-txt p {
+  color: #717171;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.aboutus-txt span {
+  font-family: RBR;
+  color: #717171;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.aboutus-txt .btn.md.primary-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.circle {
+  margin-left: 2rem;
+}
+
+.circle span {
+  font-size: 1.5rem;
+  color: white;
+}
+
+// ------產品特色------
+
+.product-feature {
+  // min-height: 100vh;
+  background: white;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin 5vmin 10vmin 5vmin;
+  overflow: hidden;
+  transform: skew(5deg);
+
+  .card {
+    flex: 1; // 平分
+    transition: all 1s ease-in-out;
+    height: 85vmin;
+    position: relative;
+    overflow: hidden;
+
+    // card外面文字
+    .card__head {
+      color: white;
+      background: rgba(228, 149, 90, 0.75);
+      padding: 0.5em;
+      transform: rotate(-90deg);
+      transform-origin: 0% 0%;
+      transition: all 0.5s ease-in-out;
+      min-width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .card__head_detail {
+      color: white;
+      background: rgba(81, 169, 170, 0.75);
+      padding: 0.5em;
+      transform: rotate(-90deg);
+      transform-origin: 0% 0%;
+      transition: all 0.5s ease-in-out;
+      min-width: 105%;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 1rem;
+      white-space: nowrap;
+      display: none;
+    }
+
+    &:hover {
+      flex-grow: 10;
+      img {
+        filter: grayscale(0);
+      }
+      .card__head {
+        text-align: center;
+        top: calc(100% - 2em);
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 2em;
+        transform: rotate(0deg) skew(-5deg);
+        display: none;
+      }
+
+      .card__head_detail {
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        transform: rotate(0deg) skew(-5deg);
+        display: block;
+      }
+
+      .card__head_detail p {
+        color: rgba(228, 149, 90);
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      img {
+        filter: grayscale(0%);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease-in-out;
+      filter: brightness(40%) grayscale(100%);
+    }
+    &:not(:nth-child(5)) {
+      margin-right: 1em;
+    }
+  }
+}
+
+// ------客製化產品------
+.custom-bg {
+  background: url($MYPORT + 'img/home/custom-bg.jpg');
+  color: #eee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+.custom-container .title-txt {
+  margin-top: 20vmin;
+  color: transparent;
+  -webkit-text-stroke: 0.8px rgb(226, 226, 226);
+  text-stroke: 0.8px rgb(226, 226, 226);
+  text-shadow: 0px 0px 50px #fff;
+}
+
+.custom-item-image:hover {
+  box-shadow: 1000px 0px 100px 90px rgba(193, 214, 213, 0.24);
+
+  &:before {
+    width: 100%;
+    opacity: 0.18;
+    filter: blur(50px) saturate(100%);
+    transform: scale(2.8) translate3d(108%, 0px, 0px);
+  }
+}
+
+.custom-item-right {
+  width: 100%;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: inherit;
+    background-position: bottom;
+    filter: blur(40px) saturate(0%);
+    transform: scaleX(0.4);
+    transition: ease-in-out 0.4s;
+    border-radius: 120px;
+    transform-origin: right;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .item_info {
+    position: relative;
+    // margin-left: 10%;
+    line-height: 1.8;
+    opacity: 0;
+  }
+
+  .item_info-right {
+    position: relative;
+    margin-left: 10%;
+    line-height: 1.8;
+    opacity: 0;
+    box-shadow: -585px 0px 100px 90px rgba(193, 214, 213, 0.24);
+
+    &:before {
+      width: 100%;
+      opacity: 0.18;
+      filter: blur(50px) saturate(100%);
+      transform: scale(2.8) translate3d(108%, 0px, 0px);
+    }
+  }
+
+  .item_location {
+    font-size: 1.6rem;
+    transition-delay: 0.15s;
+  }
+
+  .item_location-right {
+    font-size: 1.6rem;
+    transition-delay: 0.15s;
+  }
+
+  .custom-item-image:hover ~ .item_info {
+    position: relative;
+    margin-left: 10%;
+    line-height: 1.8;
+    transition: ease-in-out 1s;
+    opacity: 1;
+  }
+
+  .custom-item-image:hover ~ .item_info .item_location {
+    transition-delay: 10s;
+  }
+
+  // 第二張圖
+  .custom-item-image:hover ~ .item_info-right {
+    position: relative;
+    margin-right: 10%;
+    line-height: 1.8;
+    transition: ease-in-out 1s;
+    opacity: 1;
+  }
+
+  .custom-item-image:hover ~ .item_info-right .item_location-right {
+    transition-delay: 10s;
+  }
+
+  .item1 {
+    background-image: url($MYPORT + 'img/home/custom01.png');
+  }
+
+  .item2 {
+    background-image: url($MYPORT + 'img/home/custom02.png');
+  }
+
+  .item3 {
+    background-image: url($MYPORT + 'img/home/custom03.png');
+  }
+
+  .custom-item-image {
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+
+    &:hover {
+      width: 60vmin;
+      height: 40vmin;
+      border-radius: 0;
+    }
+  }
+
+  .item-title {
+    border-bottom: 1px solid transparent;
+    color: #06c0a8;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: ease-in 0.13s;
+  }
+}
+
+// ------設計專區1------
+.productcontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+}
+
+// 白色底的box
+.productcontainer .box {
+  display: flex;
+  width: 0%; //70%
+  height: 100vmin;
+  background: #fff;
+  position: absolute;
+}
+
+// 白色底的box動畫
+.productcontainer .box-animation {
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+  @keyframes openBox {
+    0% {
+      width: 0px;
+      left: 15%;
+    }
+    100% {
+      width: 70%;
+      left: 15%;
+    }
+  }
+}
+
+// 整個圖片框
+.productcontainer .box .product-img {
+  width: 60%;
+  height: 65vmin;
+  position: absolute;
+  left: -10%;
+  top: 20%;
+  opacity: 0; //1
+  z-index: 1;
+  overflow: hidden;
+}
+
+// 整個圖片框動畫
+.productcontainer .box .product-img-animation {
+  animation: fadeImg 1s ease-in-out forwards;
+  animation-delay: 1s;
+
+  @keyframes fadeImg {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+// 圖片
+.productcontainer .box .product-img img {
+  width: 100%;
+  background-size: contain;
+}
+
+// 珊瑚橘box
+.productcontainer .box .product-disc {
+  width: 0px; //70%
+  height: 75vmin;
+  background: #c88a78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px; //40%
+  top: 15%;
+}
+
+// 藍色box
+.productcontainer .box .disc-color2 {
+  background: #a9cfcb;
+}
+
+// 珊瑚橘box動畫
+.productcontainer .box .product-disc-animation {
+  animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+  @keyframes showDisc {
+    0% {
+      width: 0px;
+      left: 40%;
+    }
+    100% {
+      width: 70%;
+      left: 40%;
+    }
+  }
+}
+
+// 文字框
+.productcontainer .box .product-disc .product-disc-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+  margin-left: 20%;
+  margin-right: 5%;
+  position: relative;
+
+  .disc-content-about {
+    width: 100%;
+
+    h1 {
+      font-size: 3.8rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    span {
+      letter-spacing: 2px;
+      display: flex;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #525252;
+    }
+  }
+}
+
+// 文字框動畫
+.productcontainer .box .product-disc .product-disc-content-animation {
+  animation: fadeContent 1s ease-in-out forwards;
+  animation-delay: 1s;
+
+  @keyframes fadeContent {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.productcontainer .box .product-disc .product-disc-content .product-buttons {
+  bottom: -50%;
+  position: absolute;
+
+  .btn {
+    border-radius: 100px;
+    -webkit-transition: ease-in-out 220ms;
+    -moz-transition: ease-in-out 220ms;
+    -ms-transition: ease-in-out 220ms;
+    -o-transition: ease-in-out 220ms;
+    transition: ease-in-out 220ms;
+    cursor: pointer;
+  }
+
+  .btn {
+    width: 185px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .buy {
+    border: none;
+    background: #51a9aa;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+
+    &:hover {
+      background: #62c8c9;
+      box-shadow: 0 0 26px #62c8c9;
+    }
+  }
+
+  .buy2 {
+    background: #e4955a;
+
+    &:hover {
+      background: #f5ae79;
+      box-shadow: 0 0 26px #f5ae79;
+    }
+  }
+}
+
+.productcontainer
+  .box
+  .product-disc
+  .product-disc-content
+  .product-buttons
+  .buy-animation {
+  animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+
+  @keyframes fadeBuy {
+    0% {
+      opacity: 0;
+      bottom: -25px;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+}
+
+// ------設計專區2------
+.product2 .box .product-img {
+  width: 60%;
+  height: 65vmin;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  opacity: 0; //1
+  z-index: 1;
+  overflow: hidden;
+}
+// 藍色box
+.productcontainer .box .disc-color2 {
+  width: 0px; //70%
+  height: 75vmin;
+  background: #a9cfcb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px; //40%
+  top: 15%;
+}
+
+// 藍色box動畫
+.product2 .box .product-disc-animation {
+  animation: showDisc2 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+  @keyframes showDisc2 {
+    0% {
+      width: 0px;
+      left: -10%;
+    }
+    100% {
+      width: 70%;
+      left: -10%;
+    }
+  }
+}
+
+// ------社群------
+// 整個social架構
+.social-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.social-img {
+  display: flex;
+}
+
+.social-img-mobile {
+  display: none;
+}
+
+.social-txt {
+  padding-top: 20vh;
+}
+.social-content {
+  margin-left: 10%;
+}
+
+// 簍空MY
+.social-txt h1 span {
+  font-size: 5rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #222;
+  text-stroke: 1.5px #222;
+}
+
+// social media
+.social-txt h1 {
+  font-weight: 700;
+}
+
+.social-txt p {
+  color: #717171;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.social-txt span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+// 我們都在用JU4T
+p.hastag {
+  color: #e4955a;
+  font-size: 1.6rem;
+}
+
+// 圓形按鈕
+.social-txt .btn.md.important-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+// txt和img平分
+.social-txt,
+.social-img {
+  height: 100vh;
+  height: calc(
+    var(--vh, 1vh) * 100
+  ); //safrai的100vh，為一個螢幕高而非一個視窗高
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  // width: 50%;
+}
+
+.social-txt {
+  width: 50%;
+}
+
+.social-img {
+  width: 45%;
+}
+.social-img .social-slide-left,
+.social-img .social-slide-right {
+  width: 50%;
+}
+
+.social-slide {
+  width: 100%;
+}
+
+.social-slide img {
+  width: 100%;
+  border-radius: 10%;
+  background-size: cover;
+}
+
+.social-slide-left .slick-list,
+.social-slide-right .slick-list {
+  min-height: 100vh;
+  min-height: calc(
+    var(--vh, 1vh) * 100
+  ); //safrai的100vh，為一個螢幕高而非一個視窗高
+}
+.social-slide-left {
+  margin-right: 15px;
+}
+
+.social-slide-right {
+  margin-left: 15px;
+}
+.social-slide {
+  margin-bottom: 30px;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+  position: relative;
+  display: block;
+}
+
+// ------遊戲------
+.game-container {
+  background-color: white;
+  position: relative;
+}
+
+.game-txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-img > div {
+  width: inherit;
+  backface-visibility: hidden; /* 在下層時隱藏 */
+}
+
+.game-img {
+  width: 100%;
+  max-width: 495px;
+  margin: auto;
+  transition: 0.7s ease-in-out; /* 設定執行時間為0.7s */
+  transform-style: preserve-3d;
+}
+
+.game-img img {
+  width: 100%;
+  background-size: cover;
+}
+
+.game-img:hover {
+  transform: rotateY(180deg); /* 翻轉180 */
+  transition: 0.7s ease-in-out; /* 設定執行時間為0.7秒，速度曲線設定ease模式 */
+  transform-style: preserve-3d;
+}
+
+.front-img {
+  position: absolute;
+}
+
+.back-img {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 992px) {
+  .home-content {
+    margin-top: 0px;
+  }
+
+  .home-content h1 {
+    font-size: 3.7rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .aboutus-bg-mobile img {
+    width: 100%;
+    background-size: cover;
+    display: none;
+  }
+
+  .product-feature {
+    display: block;
+  }
+
+  .product-feature img {
+    width: 100%;
+  }
+
+  .productcontainer
+    .box
+    .product-disc
+    .product-disc-content
+    .disc-content-about
+    h1 {
+    color: white;
+    font-size: 2.8rem;
+  }
+  .productcontainer
+    .box
+    .product-disc
+    .product-disc-content
+    .disc-content-about
+    span {
+    letter-spacing: 2px;
+    display: flex;
+    font-size: 1.4rem;
+  }
+
+  // 簍空MY
+  .social-txt h1 span {
+    font-size: 3.7rem;
+  }
+
+  // 我們都在用JU4T
+  p.hastag {
+    color: #e4955a;
+    font-size: 1.2rem;
+  }
+
+  // 圓形按鈕
+  .social-txt .btn.md.important-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  // ------客製化產品------
+  .custom-bg {
+    background: url($MYPORT + 'img/home/custom-bg.jpg');
+    color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
+  }
+
+  @keyframes animation {
+    100% {
+      background-position: 0px -3000px;
+    }
+  }
+
+  .custom-item-right {
+    width: 100%;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: inherit;
+      background-position: bottom;
+      filter: blur(40px) saturate(0%);
+      transform: scaleX(0.4);
+      transition: ease-in-out 0.4s;
+      border-radius: 120px;
+      transform-origin: right;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .item_info {
+      position: relative;
+      // margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_info-right {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_location {
+      font-size: 1.2rem;
+      transition-delay: 0.15s;
+    }
+
+    .item_location-right {
+      font-size: 1.2rem;
+      transition-delay: 0.15s;
+    }
+
+    .custom-item-image:hover ~ .item_info {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info .item_location {
+      transition-delay: 10s;
+    }
+
+    // 第二張圖
+    .custom-item-image:hover ~ .item_info-right {
+      position: relative;
+      margin-right: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info-right .item_location-right {
+      transition-delay: 10s;
+    }
+
+    .item1 {
+      background-image: url($MYPORT + 'img/home/custom01.png');
+    }
+
+    .item2 {
+      background-image: url($MYPORT + 'img/home/custom02.png');
+    }
+
+    .item3 {
+      background-image: url($MYPORT + 'img/home/custom03.png');
+    }
+
+    .custom-item-image {
+      width: 40vmin;
+      height: 40vmin;
+      border-radius: 50%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: ease-in-out 0.3s;
+      z-index: 2;
+
+      &:hover {
+        width: 60vmin;
+        height: 40vmin;
+        border-radius: 0;
+      }
+    }
+
+    .item-title {
+      border-bottom: 1px solid transparent;
+      color: #06c0a8;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: ease-in 0.13s;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* 所有h1的字 */
+  .home-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  /* hero-img ▼ */
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img-mobile {
+    display: block;
+  }
+
+  .hero-img-mobile img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .hero-img-txt {
+    width: 340px;
+    font-family: TCR;
+    color: white;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .aboutus-bg {
+    display: none;
+  }
+
+  .aboutus-bg-mobile img {
+    width: 100%;
+    background-size: cover;
+    display: block;
+  }
+
+  .aboutus-txt {
+    min-width: 200px;
+    text-align: left;
+    left: 78%;
+    top: 50%;
+    transform: translate(-72%, -50%);
+  }
+
+  .aboutus-txt p {
+    color: #717171;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .aboutus-txt span {
+    font-family: RBR;
+    color: #717171;
+    font-weight: 300;
+  }
+
+  .circle span {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .feature-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+    overflow: hidden;
+    transform: skew(0deg);
+  }
+
+  // ------設計專區------
+  .productcontainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+  }
+
+  // 白色底的box
+  .productcontainer .box {
+    display: flex;
+    width: 0%; //70%
+    height: 100vmin;
+    background: #fff;
+    position: absolute;
+  }
+
+  // 白色底的box動畫
+  .productcontainer .box-animation {
+    animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes openBox {
+      0% {
+        width: 0px;
+        left: 15%;
+      }
+      100% {
+        width: 70%;
+        left: 15%;
+      }
+    }
+  }
+
+  // 整個圖片框
+  .productcontainer .box .product-img {
+    width: 60%;
+    height: 65vmin;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    opacity: 0; //1
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  // 整個圖片框動畫
+  .productcontainer .box .product-img-animation {
+    animation: fadeImg 1s ease-in-out forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeImg {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 圖片
+  .productcontainer .box .product-img img {
+    width: 100%;
+    background-size: contain;
+  }
+
+  // 珊瑚橘box
+  .productcontainer .box .product-disc {
+    width: 0px; //70%
+    height: 75vmin;
+    background: #c88a78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px; //40%
+    top: 15%;
+  }
+
+  .productcontainer .box .disc-color2 {
+    background: #a9cfcb;
+  }
+
+  // 珊瑚橘box動畫
+  .productcontainer .box .product-disc-animation {
+    animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes showDisc {
+      0% {
+        width: 0px;
+        left: 40%;
+      }
+      100% {
+        width: 70%;
+        left: 40%;
+      }
+    }
+  }
+
+  // 文字框
+  .productcontainer .box .product-disc .product-disc-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0;
+    margin-left: 20%;
+    margin-right: 5%;
+    position: relative;
+
+    .disc-content-about {
+      width: 100%;
+
+      h1 {
+        color: white;
+        font-size: 2rem;
+      }
+      span {
+        letter-spacing: 2px;
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  // 文字框動畫
+  .productcontainer .box .product-disc .product-disc-content-animation {
+    animation: fadeContent 1s ease-in-out forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeContent {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .productcontainer .box .product-disc .product-disc-content .product-buttons {
+    bottom: -30%;
+    position: absolute;
+
+    .btn {
+      border-radius: 100px;
+      -webkit-transition: ease-in-out 220ms;
+      -moz-transition: ease-in-out 220ms;
+      -ms-transition: ease-in-out 220ms;
+      -o-transition: ease-in-out 220ms;
+      transition: ease-in-out 220ms;
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 89px;
+      height: 30px;
+      font-size: 12px;
+    }
+
+    .buy {
+      border: none;
+      background: #51a9aa;
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      opacity: 1;
+
+      &:hover {
+        background: #62c8c9;
+        box-shadow: 0 0 26px #62c8c9;
+      }
+    }
+
+    .buy2 {
+      background: #e4955a;
+
+      &:hover {
+        background: #f5ae79;
+        box-shadow: 0 0 26px #f5ae79;
+      }
+    }
+  }
+
+  .productcontainer
+    .box
+    .product-disc
+    .product-disc-content
+    .product-buttons
+    .buy-animation {
+    animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeBuy {
+      0% {
+        opacity: 0;
+        bottom: -25px;
+      }
+      100% {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+  }
+
+  // ------設計專區2------
+  .product2 .box .product-img {
+    width: 60%;
+    height: 65vmin;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    opacity: 0; //1
+    z-index: 1;
+    overflow: hidden;
+  }
+  // 藍色box
+  .productcontainer .box .disc-color2 {
+    width: 0px; //70%
+    height: 75vmin;
+    background: #a9cfcb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px; //40%
+    top: 15%;
+  }
+
+  // 藍色box動畫
+  .product2 .box .product-disc-animation {
+    animation: showDisc2 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes showDisc2 {
+      0% {
+        width: 0px;
+        left: -10%;
+      }
+      100% {
+        width: 70%;
+        left: -10%;
+      }
+    }
+  }
+
+  // ------客製化產品------
+  .custom-bg {
+    background: url($MYPORT + 'img/home/custom-bg.jpg');
+    color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
+  }
+
+  @keyframes animation {
+    100% {
+      background-position: 0px -3000px;
+    }
+  }
+
+  .custom-item-right {
+    width: 100%;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: inherit;
+      background-position: bottom;
+      filter: blur(40px) saturate(0%);
+      transform: scaleX(0.4);
+      transition: ease-in-out 0.4s;
+      border-radius: 120px;
+      transform-origin: right;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .item_info {
+      position: relative;
+      // margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_info-right {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_location {
+      font-size: 1rem;
+      transition-delay: 0.15s;
+    }
+
+    .item_location-right {
+      font-size: 1rem;
+      transition-delay: 0.15s;
+    }
+
+    .custom-item-image:hover ~ .item_info {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info .item_location {
+      transition-delay: 10s;
+    }
+
+    // 第二張圖
+    .custom-item-image:hover ~ .item_info-right {
+      position: relative;
+      margin-right: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info-right .item_location-right {
+      transition-delay: 10s;
+    }
+
+    .item1 {
+      background-image: url($MYPORT + 'img/home/custom01.png');
+    }
+
+    .item2 {
+      background-image: url($MYPORT + 'img/home/custom02.png');
+    }
+
+    .item3 {
+      background-image: url($MYPORT + 'img/home/custom03.png');
+    }
+
+    .custom-item-image {
+      width: 40vmin;
+      height: 40vmin;
+      border-radius: 50%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: ease-in-out 0.3s;
+      z-index: 2;
+
+      &:hover {
+        width: 60vmin;
+        height: 40vmin;
+        border-radius: 0;
+      }
+    }
+
+    .item-title {
+      border-bottom: 1px solid transparent;
+      color: #06c0a8;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: ease-in 0.13s;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // ------設計專區------
+  .productcontainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+  }
+
+  // 白色底的box
+  .productcontainer .box {
+    display: flex;
+    width: 0%; //70%
+    height: 100vmin;
+    background: #fff;
+    position: absolute;
+  }
+
+  // 白色底的box動畫
+  .productcontainer .box-animation {
+    animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes openBox {
+      0% {
+        width: 0px;
+        left: 15%;
+      }
+      100% {
+        width: 70%;
+        left: 15%;
+      }
+    }
+  }
+
+  // 整個圖片框
+  .productcontainer .box .product-img {
+    width: 60%;
+    height: 65vmin;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    opacity: 0; //1
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  // 整個圖片框動畫
+  .productcontainer .box .product-img-animation {
+    animation: fadeImg 1s ease-in-out forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeImg {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 圖片
+  .productcontainer .box .product-img img {
+    width: 100%;
+    background-size: contain;
+  }
+
+  // 珊瑚橘box
+  .productcontainer .box .product-disc {
+    width: 0px; //70%
+    height: 75vmin;
+    background: #c88a78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px; //40%
+    top: 15%;
+  }
+
+  .productcontainer .box .disc-color2 {
+    background: #a9cfcb;
+  }
+
+  // 珊瑚橘box動畫
+  .productcontainer .box .product-disc-animation {
+    animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes showDisc {
+      0% {
+        width: 0px;
+        left: 40%;
+      }
+      100% {
+        width: 70%;
+        left: 40%;
+      }
+    }
+  }
+
+  // 文字框
+  .productcontainer .box .product-disc .product-disc-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0;
+    margin-left: 20%;
+    margin-right: 5%;
+    position: relative;
+
+    .disc-content-about {
+      width: 100%;
+
+      h1 {
+        color: white;
+      }
+      span {
+        letter-spacing: 2px;
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  // 文字框動畫
+  .productcontainer .box .product-disc .product-disc-content-animation {
+    animation: fadeContent 1s ease-in-out forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeContent {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .productcontainer .box .product-disc .product-disc-content .product-buttons {
+    bottom: -30%;
+    position: absolute;
+
+    .btn {
+      border-radius: 100px;
+      -webkit-transition: ease-in-out 220ms;
+      -moz-transition: ease-in-out 220ms;
+      -ms-transition: ease-in-out 220ms;
+      -o-transition: ease-in-out 220ms;
+      transition: ease-in-out 220ms;
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 89px;
+      height: 30px;
+      font-size: 12px;
+    }
+
+    .buy {
+      border: none;
+      background: #51a9aa;
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      opacity: 1;
+
+      &:hover {
+        background: #62c8c9;
+        box-shadow: 0 0 26px #62c8c9;
+      }
+    }
+
+    .buy2 {
+      background: #e4955a;
+
+      &:hover {
+        background: #f5ae79;
+        box-shadow: 0 0 26px #f5ae79;
+      }
+    }
+  }
+
+  .productcontainer
+    .box
+    .product-disc
+    .product-disc-content
+    .product-buttons
+    .buy-animation {
+    animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 1s;
+
+    @keyframes fadeBuy {
+      0% {
+        opacity: 0;
+        bottom: -25px;
+      }
+      100% {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+  }
+
+  // ------設計專區2------
+  .product2 .box .product-img {
+    width: 60%;
+    height: 65vmin;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    opacity: 0; //1
+    z-index: 1;
+    overflow: hidden;
+  }
+  // 藍色box
+  .productcontainer .box .disc-color2 {
+    width: 0px; //70%
+    height: 75vmin;
+    background: #a9cfcb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px; //40%
+    top: 15%;
+  }
+
+  // 藍色box動畫
+  .product2 .box .product-disc-animation {
+    animation: showDisc2 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+
+    @keyframes showDisc2 {
+      0% {
+        width: 0px;
+        left: -10%;
+      }
+      100% {
+        width: 70%;
+        left: -10%;
+      }
+    }
+  }
+
+  // ------客製化產品------
+  .custom-bg {
+    background: url($MYPORT + 'img/home/custom-bg.jpg');
+    color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
+  }
+
+  @keyframes animation {
+    100% {
+      background-position: 0px -3000px;
+    }
+  }
+
+  .custom-item-right {
+    width: 100%;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: inherit;
+      background-position: bottom;
+      filter: blur(40px) saturate(0%);
+      transform: scaleX(0.4);
+      transition: ease-in-out 0.4s;
+      border-radius: 120px;
+      transform-origin: right;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .item_info {
+      position: relative;
+      // margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_info-right {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      opacity: 0;
+    }
+
+    .item_location {
+      font-size: 0.6rem;
+      transition-delay: 0.15s;
+    }
+
+    .item_location-right {
+      font-size: 0.6rem;
+      transition-delay: 0.15s;
+    }
+
+    .custom-item-image:hover ~ .item_info {
+      position: relative;
+      margin-left: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info .item_location {
+      transition-delay: 10s;
+    }
+
+    // 第二張圖
+    .custom-item-image:hover ~ .item_info-right {
+      position: relative;
+      margin-right: 10%;
+      line-height: 1.8;
+      transition: ease-in-out 1s;
+      opacity: 1;
+    }
+
+    .custom-item-image:hover ~ .item_info-right .item_location-right {
+      transition-delay: 10s;
+    }
+
+    .item1 {
+      background-image: url($MYPORT + 'img/home/custom01.png');
+    }
+
+    .item2 {
+      background-image: url($MYPORT + 'img/home/custom02.png');
+    }
+
+    .item3 {
+      background-image: url($MYPORT + 'img/home/custom03.png');
+    }
+
+    .custom-item-image {
+      width: 40vmin;
+      height: 40vmin;
+      border-radius: 50%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: ease-in-out 0.3s;
+      z-index: 2;
+
+      &:hover {
+        width: 60vmin;
+        height: 40vmin;
+        border-radius: 0;
+      }
+    }
+
+    .item-title {
+      border-bottom: 1px solid transparent;
+      color: #06c0a8;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: ease-in 0.13s;
+    }
+  }
+}

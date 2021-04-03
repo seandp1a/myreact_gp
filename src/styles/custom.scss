@@ -1,0 +1,21 @@
+// 變數覆蓋需要在導入Bootstrap的Sass檔案之前
+// 參考Bootstrap的 _variables.scss
+$primary: #e4955a;
+$secondary: #51a9aa;
+
+// 導入Bootstrap所有的樣式與預設變數
+@import '~bootstrap/scss/bootstrap.scss';
+
+main > .container {
+  padding: 60px 15px 0;
+}
+@media (min-width: 992px) {
+  main > .container {
+    padding: 90px 15px 0;
+  }
+}
+// $MYPORT: "http://localhost:3000/";
+$MYPORT: 'https://seandp1a.github.io/myreact_gp/';
+@import './style.scss';
+@import './JNav.scss';
+@import './JFooter.scss';

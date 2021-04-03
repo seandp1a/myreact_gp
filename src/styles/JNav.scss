@@ -1,0 +1,232 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* navbar 高度 ▼ */
+.ju4t-nav {
+  height: 90px;
+  background: white;
+}
+
+.navbar {
+  margin-top: 15px;
+}
+
+/* navbar 連結字體 ▼ */
+.nav-link {
+  font-weight: 500;
+  color: #707070;
+  font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: #e4955a !important;
+}
+
+/* logo大小 ▼ */
+.navbar-brand svg {
+  width: 85px;
+  height: 27px;
+}
+
+/* navbar button 大小 */
+.navbar-icon-btn .btn svg,
+.navbar-icon-btn a svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.navbar-icon-btn:hover .btn svg,
+.navbar-icon-btn:hover a svg {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+/* 產品下拉選單 */
+.products-dropdown .dropdown-item.active,
+.dropdown-item:active {
+  background-color: #fff;
+  color: #707070;
+}
+
+.products-dropdown .row {
+  width: 600px;
+}
+
+@media screen and (max-width: 490px) {
+  .products-dropdown .row {
+    width: 90%;
+  }
+  .products-dropdown .dropdown-menu.show {
+    width: 320px;
+  }
+}
+
+/* search icon */
+
+.input-group.search-group {
+  height: 50px;
+  min-width: 50px;
+  position: relative;
+}
+
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+  padding: 10px 20px;
+  width: 180px;
+  color: #000;
+  cursor: auto;
+  background-color: #fff;
+  border-bottom: 2px solid #707070;
+  opacity: 1;
+}
+
+.input-group .form-control::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-group .form-control:hover::-webkit-input-placeholder,
+.input-group .form-control:focus::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+.input-group .form-control:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-color: #e6e6e6;
+}
+
+.form-control.search-control {
+  background: url($MYPORT + "img/components/icon-search.svg") no-repeat right
+    11px center / 20px;
+  opacity: 0.7;
+  border: 0px;
+  border-radius: 0px;
+  color: transparent;
+  font-size: 14px;
+  width: 38px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  position: absolute;
+  right: 13px;
+  top: 10px;
+
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+
+  transition: width 0.25s;
+}
+/* 會員下拉選單 */
+.dropdown-menu.show {
+  margin: 1.7rem 0 0;
+}
+
+.nav-bag button {
+  width: 100px;
+  height: 39.63px;
+}
+
+.nav-bag-link {
+  font-weight: 700;
+  color: #919191;
+  font-size: 14px;
+}
+
+.nav-bag:hover a {
+  text-decoration: none;
+  color: #707070 !important;
+}
+
+.navbar-collapse {
+  height: 100%;
+}
+.navbar-icon-btn .dropdown-toggle::after {
+  display: none;
+}
+@media (max-width: 992px) {
+  .ju4t-nav {
+    height: 0px;
+  }
+  .navbar {
+    margin-top: 0px;
+    background-color: #fff;
+  }
+
+  /* 搜尋icon */
+  .search-mobile-version {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #919191;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url($MYPORT + "img/components/icon-search-mobile.svg");
+    background-position: 6px 4px;
+    background-repeat: no-repeat;
+    padding: 4px 20px 4px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .search-mobile-version:focus {
+    box-sizing: border-box;
+    border: 2px solid #e4955a;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 0 0 0.2rem rgb(228 149 88 / 25%);
+    outline: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  /* 會員下拉選單 */
+  .nav-bag button {
+    height: 31.73px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 57px;
+  }
+
+  /* 會員下拉選單的link */
+  .sidenav a {
+    font-weight: 500;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #e4955a;
+  }
+
+  /* 關閉面板，右上角的X */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  /* 面板向右推 */
+  #user-content {
+    transition: margin-left 0.5s;
+  }
+}

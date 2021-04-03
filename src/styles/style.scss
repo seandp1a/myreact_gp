@@ -1,0 +1,217 @@
+/* font-weight: 300(Light) 400(Regular) 500(Medium) 700(Bold) */
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("./fonts/Noto_Sans_TC/NotoSansCJKtc-Regular.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("./fonts/Noto_Sans_TC/NotoSansCJKtc-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("./fonts/Noto_Sans_TC/NotoSansCJKtc-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("./fonts/Noto_Sans_TC/NotoSansCJKtc-Medium.otf");
+  font-weight: 500;
+}
+
+/* 給客製化文字的字體 */
+@font-face {
+  font-family: "Dancing Script";
+  src: url("./fonts/Dancing_Script/DancingScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("./fonts/Dancing_Script/DancingScript-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("./fonts/Kalam/Kalam-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("./fonts/Kalam/Kalam-Bold.ttf");
+  font-weight: 700;
+}
+
+body * {
+  font-family: Roboto, "Noto Sans TC" !important;
+}
+
+/* 麵包屑 */
+/* 當前頁面加class:active */
+
+.breadcrumb {
+  background-color: transparent;
+  font-size: 12px;
+  padding: 0.75rem 0;
+  margin-bottom: 0;
+}
+.breadcrumb-item.active {
+  color: #f5ae79;
+}
+.breadcrumb a {
+  color: #707070;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* 分隔線 */
+.myhr1 {
+  display: block;
+  height: 50px;
+  background-image: url($MYPORT + "img/orders/topline.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  border: 0;
+}
+.myhr2 {
+  display: block;
+  height: 50px;
+  background: url($MYPORT + "img/orders/bottomline.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  border: 0;
+}
+.calc-hr {
+  width: 100%;
+  border-top: 2px solid #e2e2e2;
+}
+
+/* 按鈕樣式 */
+/* Class：btn primary md */
+
+.important-btn {
+  color: #fff;
+  text-align: center;
+  background: #51a9aa;
+  border-radius: 100px;
+}
+
+.important-btn:hover {
+  color: #fff;
+  background: #62c8c9;
+}
+
+.primary-btn {
+  color: #fff;
+  text-align: center;
+  background-color: #e4955a;
+  border-radius: 100px;
+}
+
+.primary-btn:hover {
+  color: #fff;
+  background-color: #f5ae79;
+}
+
+.btn.lg {
+  width: 269px;
+  height: 60px;
+  font-size: 14px;
+}
+.btn.md {
+  width: 185px;
+  height: 50px;
+  font-size: 14px;
+}
+.btn.sm {
+  width: 89px;
+  height: 30px;
+  font-size: 12px;
+}
+
+/* 文字樣式 */
+
+.primary-text {
+  color: #e4955a;
+}
+.danger-text {
+  color: #d84f5c;
+}
+.important-text {
+  color: #51a9aa;
+}
+
+/* input樣式 */
+/* classname 要加 form-control */
+
+.form-control::placeholder {
+  opacity: 0.5;
+}
+
+.primary-input {
+  font-size: 14px;
+  height: calc(1.5em + 0.75rem + 2px);
+  border-radius: 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #e4955a;
+}
+.primary-input:focus {
+  border-color: #e4955a;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 0.2rem rgb(228 149 88 / 25%);
+  outline: 0;
+}
+.primary-input ::placeholder {
+  line-height: calc(1.5em + 0.75rem + 2px);
+}
+
+.primary-select {
+  width: 307px;
+  height: 45px;
+  font-size: 14px;
+  color: #707070;
+  border-bottom: solid 2px #e4955a;
+  padding: 0 1rem;
+  border-radius: 0px;
+}
+.form-check-label {
+  font-size: 14px;
+}
+
+/* Button裡面的Link樣式 */
+// .btn a {
+//   color: white;
+// }
+
+// .btn a:hover {
+//   text-decoration: none;
+// }

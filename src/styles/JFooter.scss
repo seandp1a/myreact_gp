@@ -1,0 +1,105 @@
+footer {
+  background: url($MYPORT + 'img/components/footer/footer_bg.svg') no-repeat
+    center top;
+  background-size: cover;
+  color: #fff;
+}
+
+/* footer UL & LI 設定 */
+.footer-title {
+  font-size: 19px;
+  font-family: TCR;
+}
+.footer_ul_amrc {
+  margin: 0px;
+  list-style-type: none;
+  font-family: TCR;
+  font-size: 14px;
+  padding: 0px 0px 50px 0px;
+}
+.footer_ul_amrc li {
+  padding: 15px 0px 0px 0px;
+}
+.footer_ul_amrc li a {
+  color: #fff;
+}
+.footer_ul_amrc li a:hover {
+  color: #e4955a;
+  text-decoration: none;
+}
+
+/* 聯絡我們半透明小字 */
+.contact-detail {
+  font-family: RBR, TCR;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.footer-brand {
+  flex-wrap: wrap;
+}
+
+/* 社群svg 樣式設定 */
+.footer-brand a {
+  flex: flex-wrap;
+  margin: 0 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.footer-brand svg {
+  fill: white;
+  width: 30px;
+  height: 25px;
+}
+
+.footer-brand svg:hover {
+  fill: #e4955a;
+}
+
+/* ▼ 最後一行樣式設定 */
+.copyright {
+  font-family: RBR;
+  font-size: 14px;
+}
+
+.footer-final-ul {
+  list-style: none;
+}
+.footer-final-ul li {
+  display: inline;
+  margin: 0 8px;
+  font-family: TCR;
+  font-size: 14px;
+}
+.footer-final-ul a {
+  color: #fff;
+}
+.footer-final-ul a:hover {
+  color: #e4955a;
+  text-decoration: none;
+}
+/* 偽元素 */
+.fakeline::after {
+  height: 16px;
+  font-size: 16px;
+  content: '|';
+}
+
+/* 最後一行row與底部距離 */
+.final-row {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 992px) {
+  .footer-brand {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer-brand {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}

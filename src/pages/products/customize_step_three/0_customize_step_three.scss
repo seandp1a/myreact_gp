@@ -1,0 +1,73 @@
+// ----------- left side side -----------
+.customize-step-three .customize-photo-block img {
+  width: 250px;
+  height: 480px;
+}
+
+.customize-step-three .customize-photo-block {
+  width: 250px;
+  height: 480px;
+  margin-top: 15px;
+}
+
+// ----------- right side -----------
+.customize-step-three {
+  color: #707070;
+}
+
+.customize-step-three .caution-block-title-block {
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.customize-step-three .caution-block {
+  padding-bottom: 10px;
+}
+
+.customize-step-three .price-block {
+  color: #707070;
+  font-size: 19px;
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.customize-step-three .caution-block-content {
+  font-size: 14px;
+}
+
+.customize-step-three .caution-block-content li {
+  margin-top: 10px;
+}
+
+.customize-step-three .primary-text {
+  text-decoration: underline;
+}
+
+// ----------- buttons -----------
+.customize-step-three .btn-outline-primary {
+  color: #e4955a;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 13.5px 45px 13.5px 40px;
+  border-radius: 30px;
+  border: 2px solid #e4955a;
+}
+
+.customize-step-three .btn-outline-primary:hover {
+  color: white;
+}
+
+.customize-step-three .important-btn {
+  color: white;
+  font-size: 14px;
+  padding: 13.5px 40px 13.5px 45px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 490px) {
+  .customize-step-three .btn-outline-primary {
+    padding: 13.5px 25px 13.5px 20px;
+  }
+  .customize-step-three .important-btn {
+    padding: 13.5px 20px 13.5px 25px;
+  }
+}

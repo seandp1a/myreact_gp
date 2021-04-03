@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+DEMO LINK: https://seandp1a.github.io/myreact_gp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 資策會專題 - JU4T 手機殼
 
-## Available Scripts
+## (網站內素材僅供練習並無商用且禁止商用)
 
-In the project directory, you can run:
+此專案為使用 React.JS 製作的 手機殼電商網站
 
-### `yarn start`
+是我在 資策會-前端工程養成班 與另外五位組員共同製作
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+並由本人將他轉成 Git-Hub Page 以當做作品集來 DEMO
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 進度
 
-### `yarn test`
+### ✓ 首頁
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✓ 商品
 
-### `yarn build`
+### ✘ 會員
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✘ 結帳
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✘ 遊戲
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✘ 社群
 
-### `yarn eject`
+## 工作分配
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| 分類           | 原作者  |
+| -------------- | :-----: |
+| 首頁 home      |  Jenny  |
+| 會員 members   | Jasmine |
+| 產品 products  |  Jamie  |
+| 訂單 orders    |  友菘   |
+| 折價卷 coupons |  世能   |
+| 社群 social    |   Zu    |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 使用資源
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [react-bootstrap](https://react-bootstrap.github.io/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [react-icons](https://react-icons.github.io/react-icons/)
 
-## Learn More
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 轉成 GitHub Page 遇到的問題：
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+使用 React Router 並設 basename={process.env.PUBLIC_URL}
+故所有 Route 的 pathname 前端會有一串 "/myreact_gp"
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Public 圖片位址 (因為是首頁，img 的 src 可以使用 "./img/home/....")
