@@ -1,0 +1,2338 @@
+[
+    {
+        "name": "phone_models",
+        "data": [
+            {
+                "id": "1",
+                "model": "iPhone 6"
+            },
+            {
+                "id": "2",
+                "model": "iPhone 6 Plus"
+            },
+            {
+                "id": "3",
+                "model": "iPhone 7"
+            },
+            {
+                "id": "4",
+                "model": "iPhone 7 Plus"
+            },
+            {
+                "id": "5",
+                "model": "iPhone 8"
+            },
+            {
+                "id": "6",
+                "model": "iPhone 8 Plus"
+            },
+            {
+                "id": "7",
+                "model": "iPhone 11"
+            },
+            {
+                "id": "8",
+                "model": "iPhone 11 Pro"
+            },
+            {
+                "id": "9",
+                "model": "iPhone 11 Pro Max"
+            },
+            {
+                "id": "10",
+                "model": "iPhone 12"
+            },
+            {
+                "id": "11",
+                "model": "iPhone 12 Mini"
+            },
+            {
+                "id": "12",
+                "model": "iPhone 12 Pro"
+            },
+            {
+                "id": "13",
+                "model": "iPhone 12 Pro Max"
+            },
+            {
+                "id": "14",
+                "model": "iPhone SE 2020"
+            },
+            {
+                "id": "15",
+                "model": "iPhone X"
+            },
+            {
+                "id": "16",
+                "model": "iPhone XR"
+            },
+            {
+                "id": "17",
+                "model": "iPhone XS"
+            },
+            {
+                "id": "18",
+                "model": "iPhone XS Max"
+            }
+        ]
+    },
+    {
+        "name": "phone_series",
+        "data": [
+            {
+                "id": "1",
+                "series_name_chn": "純透明",
+                "series_name_eng": "transparent",
+                "price": "700"
+            },
+            {
+                "id": "2",
+                "series_name_chn": "動物",
+                "series_name_eng": "animals",
+                "price": "900"
+            },
+            {
+                "id": "3",
+                "series_name_chn": "幾何線條",
+                "series_name_eng": "polygon",
+                "price": "800"
+            },
+            {
+                "id": "4",
+                "series_name_chn": "食物",
+                "series_name_eng": "food",
+                "price": "830"
+            },
+            {
+                "id": "5",
+                "series_name_chn": "迷彩",
+                "series_name_eng": "camo",
+                "price": "760"
+            },
+            {
+                "id": "6",
+                "series_name_chn": "仿真大理石",
+                "series_name_eng": "marble",
+                "price": "860"
+            },
+            {
+                "id": "7",
+                "series_name_chn": "語錄",
+                "series_name_eng": "words",
+                "price": "850"
+            },
+            {
+                "id": "8",
+                "series_name_chn": "國旗",
+                "series_name_eng": "flags",
+                "price": "850"
+            },
+            {
+                "id": "9",
+                "series_name_chn": "太空",
+                "series_name_eng": "space",
+                "price": "920"
+            },
+            {
+                "id": "10",
+                "series_name_chn": "東方風",
+                "series_name_eng": "eastern",
+                "price": "900"
+            },
+            {
+                "id": "11",
+                "series_name_chn": "友菘",
+                "series_name_eng": "UsongRat",
+                "price": "950"
+            },
+            {
+                "id": "12",
+                "series_name_chn": "地瓜球",
+                "series_name_eng": "Sweet Potato Ball",
+                "price": "820"
+            },
+            {
+                "id": "13",
+                "series_name_chn": "迪士尼皮克斯",
+                "series_name_eng": "Pixar",
+                "price": "980"
+            },
+            {
+                "id": "14",
+                "series_name_chn": "不二馬大叔",
+                "series_name_eng": "Bu2ma",
+                "price": "940"
+            },
+            {
+                "id": "15",
+                "series_name_chn": "別家門市",
+                "series_name_eng": "Other Store",
+                "price": "780"
+            },
+            {
+                "id": "16",
+                "series_name_chn": "客製化",
+                "series_name_eng": "customized",
+                "price": "1000"
+            }
+        ]
+    },
+    {
+        "name": "phone_designs",
+        "data": [
+            {
+                "id": "1",
+                "series_id": "1",
+                "design_name_chn": "純透明",
+                "design_name_eng": "transparent",
+                "popularity": "54",
+                "created_date": "2018-05-19 09:11:23"
+            },
+            {
+                "id": "2",
+                "series_id": "2",
+                "design_name_chn": "黃金獵犬",
+                "design_name_eng": "golden retriever",
+                "popularity": "809",
+                "created_date": "2019-05-21 21:19:48"
+            },
+            {
+                "id": "3",
+                "series_id": "2",
+                "design_name_chn": "哈士奇",
+                "design_name_eng": "husky",
+                "popularity": "831",
+                "created_date": "2019-05-20 17:26:28"
+            },
+            {
+                "id": "4",
+                "series_id": "2",
+                "design_name_chn": "馬爾濟斯",
+                "design_name_eng": "maltese",
+                "popularity": "615",
+                "created_date": "2019-05-20 08:01:13"
+            },
+            {
+                "id": "5",
+                "series_id": "2",
+                "design_name_chn": "邊境牧羊犬",
+                "design_name_eng": "border collie",
+                "popularity": "187",
+                "created_date": "2019-05-20 22:14:39"
+            },
+            {
+                "id": "6",
+                "series_id": "2",
+                "design_name_chn": "柴犬",
+                "design_name_eng": "shiba",
+                "popularity": "328",
+                "created_date": "2019-05-21 13:14:55"
+            },
+            {
+                "id": "7",
+                "series_id": "2",
+                "design_name_chn": "法鬥",
+                "design_name_eng": "french bulldog",
+                "popularity": "52",
+                "created_date": "2019-05-20 16:05:42"
+            },
+            {
+                "id": "8",
+                "series_id": "2",
+                "design_name_chn": "恢斑貓",
+                "design_name_eng": "gray striped cat",
+                "popularity": "107",
+                "created_date": "2019-05-21 20:05:55"
+            },
+            {
+                "id": "9",
+                "series_id": "2",
+                "design_name_chn": "三花貓",
+                "design_name_eng": "calico cat",
+                "popularity": "502",
+                "created_date": "2019-05-20 22:46:31"
+            },
+            {
+                "id": "10",
+                "series_id": "2",
+                "design_name_chn": "橘貓",
+                "design_name_eng": "orange cat",
+                "popularity": "845",
+                "created_date": "2019-05-21 18:47:38"
+            },
+            {
+                "id": "11",
+                "series_id": "2",
+                "design_name_chn": "水豚入浴",
+                "design_name_eng": "capybara spa",
+                "popularity": "846",
+                "created_date": "2019-05-20 14:45:53"
+            },
+            {
+                "id": "12",
+                "series_id": "2",
+                "design_name_chn": "水豚上陸",
+                "design_name_eng": "capybara land",
+                "popularity": "136",
+                "created_date": "2019-05-21 20:25:57"
+            },
+            {
+                "id": "13",
+                "series_id": "2",
+                "design_name_chn": "小象王子",
+                "design_name_eng": "elephant prince",
+                "popularity": "585",
+                "created_date": "2019-05-20 15:41:42"
+            },
+            {
+                "id": "14",
+                "series_id": "2",
+                "design_name_chn": "紙袋兔子和倉鼠",
+                "design_name_eng": "bunny and hamster",
+                "popularity": "520",
+                "created_date": "2019-05-20 14:58:19"
+            },
+            {
+                "id": "15",
+                "series_id": "3",
+                "design_name_chn": "天狼星",
+                "design_name_eng": "sirus",
+                "popularity": "948",
+                "created_date": "2020-09-16 12:57:07"
+            },
+            {
+                "id": "16",
+                "series_id": "3",
+                "design_name_chn": "幾何鹿頭",
+                "design_name_eng": "polygon deer head",
+                "popularity": "636",
+                "created_date": "2020-09-16 12:26:46"
+            },
+            {
+                "id": "17",
+                "series_id": "3",
+                "design_name_chn": "幾何狼",
+                "design_name_eng": "polygon wolf",
+                "popularity": "420",
+                "created_date": "2020-09-16 12:04:29"
+            },
+            {
+                "id": "18",
+                "series_id": "3",
+                "design_name_chn": "幾何鹿",
+                "design_name_eng": "polygon deer",
+                "popularity": "781",
+                "created_date": "2020-09-16 12:39:04"
+            },
+            {
+                "id": "19",
+                "series_id": "4",
+                "design_name_chn": "培根蛋",
+                "design_name_eng": "bacon and eggs",
+                "popularity": "931",
+                "created_date": "2019-08-30 12:18:36"
+            },
+            {
+                "id": "20",
+                "series_id": "4",
+                "design_name_chn": "炸雞腿",
+                "design_name_eng": "fried chicken leg",
+                "popularity": "85",
+                "created_date": "2020-02-26 12:10:12"
+            },
+            {
+                "id": "21",
+                "series_id": "4",
+                "design_name_chn": "天婦羅蕎麥麵",
+                "design_name_eng": "tempura and noodles",
+                "popularity": "998",
+                "created_date": "2020-03-08 12:56:45"
+            },
+            {
+                "id": "22",
+                "series_id": "4",
+                "design_name_chn": "煎餃",
+                "design_name_eng": "dumplings",
+                "popularity": "398",
+                "created_date": "2019-04-27 12:16:35"
+            },
+            {
+                "id": "23",
+                "series_id": "4",
+                "design_name_chn": "拉麵",
+                "design_name_eng": "ramen noodles",
+                "popularity": "815",
+                "created_date": "2020-04-13 12:43:50"
+            },
+            {
+                "id": "24",
+                "series_id": "4",
+                "design_name_chn": "日式便當",
+                "design_name_eng": "bento",
+                "popularity": "613",
+                "created_date": "2020-07-21 12:40:23"
+            },
+            {
+                "id": "25",
+                "series_id": "4",
+                "design_name_chn": "壽司",
+                "design_name_eng": "sushi",
+                "popularity": "261",
+                "created_date": "2019-12-15 12:03:02"
+            },
+            {
+                "id": "26",
+                "series_id": "4",
+                "design_name_chn": "燒肉便當",
+                "design_name_eng": "roasted pork bento",
+                "popularity": "440",
+                "created_date": "2020-12-07 12:09:26"
+            },
+            {
+                "id": "27",
+                "series_id": "4",
+                "design_name_chn": "烤蝦",
+                "design_name_eng": "grilled shrimp",
+                "popularity": "830",
+                "created_date": "2019-04-09 12:09:40"
+            },
+            {
+                "id": "28",
+                "series_id": "4",
+                "design_name_chn": "吐司",
+                "design_name_eng": "toast",
+                "popularity": "806",
+                "created_date": "2019-04-26 12:43:44"
+            },
+            {
+                "id": "29",
+                "series_id": "5",
+                "design_name_chn": "黑迷彩",
+                "design_name_eng": "black camo",
+                "popularity": "584",
+                "created_date": "2019-12-05 12:57:30"
+            },
+            {
+                "id": "30",
+                "series_id": "5",
+                "design_name_chn": "綠迷彩",
+                "design_name_eng": "green camo",
+                "popularity": "991",
+                "created_date": "2019-09-22 12:54:05"
+            },
+            {
+                "id": "31",
+                "series_id": "5",
+                "design_name_chn": "灰迷彩",
+                "design_name_eng": "gray camo",
+                "popularity": "378",
+                "created_date": "2020-12-14 12:53:58"
+            },
+            {
+                "id": "32",
+                "series_id": "5",
+                "design_name_chn": "繽紛迷彩",
+                "design_name_eng": "colorful camo",
+                "popularity": "851",
+                "created_date": "2020-02-20 12:10:19"
+            },
+            {
+                "id": "33",
+                "series_id": "5",
+                "design_name_chn": "藍迷彩",
+                "design_name_eng": "blue camo",
+                "popularity": "182",
+                "created_date": "2019-08-25 12:05:08"
+            },
+            {
+                "id": "34",
+                "series_id": "5",
+                "design_name_chn": "雲迷彩",
+                "design_name_eng": "cloud camo",
+                "popularity": "535",
+                "created_date": "2019-09-30 12:58:23"
+            },
+            {
+                "id": "35",
+                "series_id": "6",
+                "design_name_chn": "白大理石",
+                "design_name_eng": "white marble",
+                "popularity": "131",
+                "created_date": "2020-01-16 12:54:27"
+            },
+            {
+                "id": "36",
+                "series_id": "6",
+                "design_name_chn": "綠大理石",
+                "design_name_eng": "green marble",
+                "popularity": "915",
+                "created_date": "2020-07-29 12:00:53"
+            },
+            {
+                "id": "37",
+                "series_id": "6",
+                "design_name_chn": "粉紅大理石",
+                "design_name_eng": "pink marble",
+                "popularity": "953",
+                "created_date": "2020-01-12 12:25:50"
+            },
+            {
+                "id": "38",
+                "series_id": "6",
+                "design_name_chn": "玫瑰金大理石",
+                "design_name_eng": "rose gold marble",
+                "popularity": "866",
+                "created_date": "2019-09-14 12:35:25"
+            },
+            {
+                "id": "39",
+                "series_id": "6",
+                "design_name_chn": "黑大理石",
+                "design_name_eng": "black marble",
+                "popularity": "415",
+                "created_date": "2019-12-07 12:12:51"
+            },
+            {
+                "id": "40",
+                "series_id": "6",
+                "design_name_chn": "翡翠大理石",
+                "design_name_eng": "jade marble",
+                "popularity": "390",
+                "created_date": "2019-10-05 12:53:22"
+            },
+            {
+                "id": "41",
+                "series_id": "6",
+                "design_name_chn": "藍大理石",
+                "design_name_eng": "blue marble",
+                "popularity": "598",
+                "created_date": "2020-07-07 12:06:36"
+            },
+            {
+                "id": "42",
+                "series_id": "7",
+                "design_name_chn": "不想上班",
+                "design_name_eng": "dont wanna work",
+                "popularity": "349",
+                "created_date": "2019-08-30 12:41:52"
+            },
+            {
+                "id": "43",
+                "series_id": "7",
+                "design_name_chn": "記憶體不足",
+                "design_name_eng": "insufficient RAM",
+                "popularity": "425",
+                "created_date": "2019-06-18 12:55:25"
+            },
+            {
+                "id": "44",
+                "series_id": "7",
+                "design_name_chn": "發大財",
+                "design_name_eng": "get rich",
+                "popularity": "684",
+                "created_date": "2019-06-05 12:35:52"
+            },
+            {
+                "id": "45",
+                "series_id": "7",
+                "design_name_chn": "是在哈囉",
+                "design_name_eng": "excuse me",
+                "popularity": "255",
+                "created_date": "2020-05-24 12:19:35"
+            },
+            {
+                "id": "46",
+                "series_id": "7",
+                "design_name_chn": "離線",
+                "design_name_eng": "you are offline",
+                "popularity": "275",
+                "created_date": "2019-05-10 12:14:27"
+            },
+            {
+                "id": "47",
+                "series_id": "7",
+                "design_name_chn": "邊緣人",
+                "design_name_eng": "misfit",
+                "popularity": "722",
+                "created_date": "2019-04-25 12:06:44"
+            },
+            {
+                "id": "48",
+                "series_id": "7",
+                "design_name_chn": "我貓在等我下班",
+                "design_name_eng": "my cat is waiting",
+                "popularity": "233",
+                "created_date": "2019-06-02 12:09:27"
+            },
+            {
+                "id": "49",
+                "series_id": "7",
+                "design_name_chn": "吃貨",
+                "design_name_eng": "foodie",
+                "popularity": "785",
+                "created_date": "2020-01-03 12:41:16"
+            },
+            {
+                "id": "50",
+                "series_id": "8",
+                "design_name_chn": "台灣",
+                "design_name_eng": "Taiwan",
+                "popularity": "104",
+                "created_date": "2019-03-22 12:12:45"
+            },
+            {
+                "id": "51",
+                "series_id": "8",
+                "design_name_chn": "英國",
+                "design_name_eng": "England",
+                "popularity": "507",
+                "created_date": "2019-08-30 12:38:24"
+            },
+            {
+                "id": "52",
+                "series_id": "8",
+                "design_name_chn": "美國",
+                "design_name_eng": "USA",
+                "popularity": "927",
+                "created_date": "2019-10-21 12:32:51"
+            },
+            {
+                "id": "53",
+                "series_id": "8",
+                "design_name_chn": "加拿大",
+                "design_name_eng": "Canada",
+                "popularity": "874",
+                "created_date": "2019-03-19 12:49:45"
+            },
+            {
+                "id": "54",
+                "series_id": "8",
+                "design_name_chn": "義大利",
+                "design_name_eng": "Italy",
+                "popularity": "780",
+                "created_date": "2019-11-01 12:00:40"
+            },
+            {
+                "id": "55",
+                "series_id": "8",
+                "design_name_chn": "法國",
+                "design_name_eng": "France",
+                "popularity": "405",
+                "created_date": "2020-07-21 12:13:07"
+            },
+            {
+                "id": "56",
+                "series_id": "8",
+                "design_name_chn": "比利時",
+                "design_name_eng": "Belgium",
+                "popularity": "130",
+                "created_date": "2020-11-08 12:39:12"
+            },
+            {
+                "id": "57",
+                "series_id": "8",
+                "design_name_chn": "日本",
+                "design_name_eng": "Japan",
+                "popularity": "698",
+                "created_date": "2019-05-24 12:31:08"
+            },
+            {
+                "id": "58",
+                "series_id": "8",
+                "design_name_chn": "韓國",
+                "design_name_eng": "Korea",
+                "popularity": "693",
+                "created_date": "2019-11-12 12:41:45"
+            },
+            {
+                "id": "59",
+                "series_id": "9",
+                "design_name_chn": "火箭",
+                "design_name_eng": "rocket",
+                "popularity": "657",
+                "created_date": "2020-09-28 12:49:48"
+            },
+            {
+                "id": "60",
+                "series_id": "9",
+                "design_name_chn": "NASA標誌",
+                "design_name_eng": "NASA logo",
+                "popularity": "631",
+                "created_date": "2019-09-13 12:07:51"
+            },
+            {
+                "id": "61",
+                "series_id": "9",
+                "design_name_chn": "往月球",
+                "design_name_eng": "to the moon",
+                "popularity": "316",
+                "created_date": "2020-10-09 12:07:51"
+            },
+            {
+                "id": "62",
+                "series_id": "9",
+                "design_name_chn": "NASA文字",
+                "design_name_eng": "NASA words",
+                "popularity": "154",
+                "created_date": "2020-03-15 12:40:29"
+            },
+            {
+                "id": "63",
+                "series_id": "10",
+                "design_name_chn": "虎虎生風",
+                "design_name_eng": "Eastern tiger",
+                "popularity": "842",
+                "created_date": "2020-03-06 12:20:47"
+            },
+            {
+                "id": "64",
+                "series_id": "10",
+                "design_name_chn": "如魚得水",
+                "design_name_eng": "like fish in water",
+                "popularity": "50",
+                "created_date": "2020-06-24 12:25:53"
+            },
+            {
+                "id": "65",
+                "series_id": "10",
+                "design_name_chn": "龍",
+                "design_name_eng": "dragon",
+                "popularity": "600",
+                "created_date": "2020-05-13 12:21:10"
+            },
+            {
+                "id": "66",
+                "series_id": "10",
+                "design_name_chn": "不倒翁",
+                "design_name_eng": "tumbler",
+                "popularity": "127",
+                "created_date": "2020-06-04 12:25:15"
+            },
+            {
+                "id": "67",
+                "series_id": "10",
+                "design_name_chn": "海浪",
+                "design_name_eng": "waves",
+                "popularity": "758",
+                "created_date": "2019-04-03 12:53:35"
+            },
+            {
+                "id": "68",
+                "series_id": "10",
+                "design_name_chn": "哥斯拉",
+                "design_name_eng": "godzilla",
+                "popularity": "404",
+                "created_date": "2019-12-08 12:47:04"
+            },
+            {
+                "id": "69",
+                "series_id": "11",
+                "design_name_chn": "bowz2",
+                "design_name_eng": "bowz2",
+                "popularity": "359",
+                "created_date": "2020-12-08 12:06:49"
+            },
+            {
+                "id": "70",
+                "series_id": "11",
+                "design_name_chn": "bowz3",
+                "design_name_eng": "bowz3",
+                "popularity": "717",
+                "created_date": "2020-03-23 12:15:58"
+            },
+            {
+                "id": "71",
+                "series_id": "11",
+                "design_name_chn": "小壯丁",
+                "design_name_eng": "muscle man",
+                "popularity": "53",
+                "created_date": "2019-11-25 12:43:40"
+            },
+            {
+                "id": "72",
+                "series_id": "11",
+                "design_name_chn": "梁以辰",
+                "design_name_eng": "Yi Chan Liang",
+                "popularity": "10",
+                "created_date": "2020-06-21 12:00:27"
+            },
+            {
+                "id": "73",
+                "series_id": "11",
+                "design_name_chn": "婁俊碩",
+                "design_name_eng": "Shou",
+                "popularity": "172",
+                "created_date": "2020-02-18 12:16:13"
+            },
+            {
+                "id": "74",
+                "series_id": "11",
+                "design_name_chn": "耳機",
+                "design_name_eng": "earbuds",
+                "popularity": "920",
+                "created_date": "2020-04-25 12:48:28"
+            },
+            {
+                "id": "75",
+                "series_id": "11",
+                "design_name_chn": "館長",
+                "design_name_eng": "Holger Chen",
+                "popularity": "950",
+                "created_date": "2019-04-07 12:00:40"
+            },
+            {
+                "id": "76",
+                "series_id": "11",
+                "design_name_chn": "黃氏兄弟",
+                "design_name_eng": "brothers Huang",
+                "popularity": "673",
+                "created_date": "2020-09-15 12:33:12"
+            },
+            {
+                "id": "77",
+                "series_id": "12",
+                "design_name_chn": "阿瓜靠近太",
+                "design_name_eng": "frog too close",
+                "popularity": "129",
+                "created_date": "2020-12-09 10:27:16"
+            },
+            {
+                "id": "78",
+                "series_id": "12",
+                "design_name_chn": "阿球靠近太",
+                "design_name_eng": "ball too close",
+                "popularity": "513",
+                "created_date": "2020-12-09 10:25:50"
+            },
+            {
+                "id": "79",
+                "series_id": "12",
+                "design_name_chn": "疊疊樂",
+                "design_name_eng": "jenga",
+                "popularity": "679",
+                "created_date": "2020-12-09 10:42:45"
+            },
+            {
+                "id": "80",
+                "series_id": "12",
+                "design_name_chn": "帶珍珠耳環的貓",
+                "design_name_eng": "the cat with pearl earings",
+                "popularity": "102",
+                "created_date": "2020-12-09 10:24:26"
+            },
+            {
+                "id": "81",
+                "series_id": "12",
+                "design_name_chn": "貓睡午覺",
+                "design_name_eng": "cat nap",
+                "popularity": "262",
+                "created_date": "2020-12-09 10:37:47"
+            },
+            {
+                "id": "82",
+                "series_id": "12",
+                "design_name_chn": "吃飽太閒",
+                "design_name_eng": "idle idle",
+                "popularity": "224",
+                "created_date": "2020-12-09 10:24:22"
+            },
+            {
+                "id": "83",
+                "series_id": "13",
+                "design_name_chn": "怪獸電力公司團隊",
+                "design_name_eng": "Monsters Inc team",
+                "popularity": "727",
+                "created_date": "2019-09-16 12:24:04"
+            },
+            {
+                "id": "84",
+                "series_id": "13",
+                "design_name_chn": "怪獸電力公司開門",
+                "design_name_eng": "Monsters Inc door",
+                "popularity": "412",
+                "created_date": "2020-07-14 12:07:27"
+            },
+            {
+                "id": "85",
+                "series_id": "13",
+                "design_name_chn": "毛怪",
+                "design_name_eng": "Sulley",
+                "popularity": "489",
+                "created_date": "2019-08-14 12:59:13"
+            },
+            {
+                "id": "86",
+                "series_id": "13",
+                "design_name_chn": "麥克",
+                "design_name_eng": "Mike",
+                "popularity": "908",
+                "created_date": "2019-08-16 12:19:25"
+            },
+            {
+                "id": "87",
+                "series_id": "13",
+                "design_name_chn": "毛怪、布及麥克",
+                "design_name_eng": "Sulley Boo Mike",
+                "popularity": "501",
+                "created_date": "2019-12-11 12:06:17"
+            },
+            {
+                "id": "88",
+                "series_id": "13",
+                "design_name_chn": "怪獸大學",
+                "design_name_eng": "Monsters University",
+                "popularity": "265",
+                "created_date": "2020-09-25 12:22:28"
+            },
+            {
+                "id": "89",
+                "series_id": "13",
+                "design_name_chn": "怪獸電力公司標誌",
+                "design_name_eng": "Monsters Inc logo",
+                "popularity": "485",
+                "created_date": "2019-04-29 12:04:23"
+            },
+            {
+                "id": "90",
+                "series_id": "14",
+                "design_name_chn": "非常生氣",
+                "design_name_eng": "very angry",
+                "popularity": "488",
+                "created_date": "2019-08-11 12:10:46"
+            },
+            {
+                "id": "91",
+                "series_id": "14",
+                "design_name_chn": "胖且生氣",
+                "design_name_eng": "fat and angry",
+                "popularity": "739",
+                "created_date": "2020-02-09 12:36:08"
+            },
+            {
+                "id": "92",
+                "series_id": "14",
+                "design_name_chn": "猛虎上山",
+                "design_name_eng": "tiger up mountain",
+                "popularity": "365",
+                "created_date": "2019-05-05 12:57:05"
+            },
+            {
+                "id": "93",
+                "series_id": "14",
+                "design_name_chn": "猛虎下山",
+                "design_name_eng": "tiger down mountain",
+                "popularity": "850",
+                "created_date": "2019-12-10 12:06:18"
+            },
+            {
+                "id": "94",
+                "series_id": "14",
+                "design_name_chn": "猛虎早安",
+                "design_name_eng": "good morning tiger",
+                "popularity": "399",
+                "created_date": "2020-09-29 12:56:31"
+            },
+            {
+                "id": "95",
+                "series_id": "15",
+                "design_name_chn": "全人物",
+                "design_name_eng": "all crew",
+                "popularity": "32",
+                "created_date": "2020-01-04 12:25:49"
+            },
+            {
+                "id": "96",
+                "series_id": "15",
+                "design_name_chn": "王姍姍",
+                "design_name_eng": "Wang Shanshan",
+                "popularity": "696",
+                "created_date": "2019-08-14 12:52:54"
+            },
+            {
+                "id": "97",
+                "series_id": "15",
+                "design_name_chn": "李宇航",
+                "design_name_eng": "Li Yuhang",
+                "popularity": "351",
+                "created_date": "2020-08-11 12:39:19"
+            },
+            {
+                "id": "98",
+                "series_id": "15",
+                "design_name_chn": "林凡",
+                "design_name_eng": "Lin Fan",
+                "popularity": "17",
+                "created_date": "2019-03-23 12:35:39"
+            },
+            {
+                "id": "99",
+                "series_id": "15",
+                "design_name_chn": "陳奕契",
+                "design_name_eng": "Chen Yiqi",
+                "popularity": "166",
+                "created_date": "2019-09-25 12:37:03"
+            },
+            {
+                "id": "100",
+                "series_id": "16",
+                "design_name_chn": "自行客製化",
+                "design_name_eng": "customized",
+                "popularity": "1000",
+                "created_date": "2021-02-23 12:37:03"
+            }
+        ]
+    },
+    {
+        "name": "phone_shells",
+        "data": [
+            {
+                "id": "1",
+                "shell_color_chn": "黑色",
+                "shell_color_en": "black"
+            },
+            {
+                "id": "2",
+                "shell_color_chn": "白色",
+                "shell_color_en": "white"
+            },
+            {
+                "id": "3",
+                "shell_color_chn": "銀色",
+                "shell_color_en": "silver"
+            },
+            {
+                "id": "4",
+                "shell_color_chn": "紅色",
+                "shell_color_en": "red"
+            },
+            {
+                "id": "5",
+                "shell_color_chn": "黃色",
+                "shell_color_en": "yellow"
+            },
+            {
+                "id": "6",
+                "shell_color_chn": "藍色",
+                "shell_color_en": "blue"
+            },
+            {
+                "id": "7",
+                "shell_color_chn": "綠色",
+                "shell_color_en": "green"
+            }
+        ]
+    },
+    {
+        "name": "phone_model_series",
+        "data": [
+            {
+                "model_id": "1",
+                "series_id": "1"
+            },
+            {
+                "model_id": "2",
+                "series_id": "1"
+            },
+            {
+                "model_id": "3",
+                "series_id": "1"
+            },
+            {
+                "model_id": "4",
+                "series_id": "1"
+            },
+            {
+                "model_id": "5",
+                "series_id": "1"
+            },
+            {
+                "model_id": "6",
+                "series_id": "1"
+            },
+            {
+                "model_id": "7",
+                "series_id": "1"
+            },
+            {
+                "model_id": "8",
+                "series_id": "1"
+            },
+            {
+                "model_id": "9",
+                "series_id": "1"
+            },
+            {
+                "model_id": "10",
+                "series_id": "1"
+            },
+            {
+                "model_id": "11",
+                "series_id": "1"
+            },
+            {
+                "model_id": "12",
+                "series_id": "1"
+            },
+            {
+                "model_id": "13",
+                "series_id": "1"
+            },
+            {
+                "model_id": "14",
+                "series_id": "1"
+            },
+            {
+                "model_id": "15",
+                "series_id": "1"
+            },
+            {
+                "model_id": "16",
+                "series_id": "1"
+            },
+            {
+                "model_id": "17",
+                "series_id": "1"
+            },
+            {
+                "model_id": "18",
+                "series_id": "1"
+            },
+            {
+                "model_id": "7",
+                "series_id": "2"
+            },
+            {
+                "model_id": "8",
+                "series_id": "2"
+            },
+            {
+                "model_id": "9",
+                "series_id": "2"
+            },
+            {
+                "model_id": "10",
+                "series_id": "2"
+            },
+            {
+                "model_id": "11",
+                "series_id": "2"
+            },
+            {
+                "model_id": "12",
+                "series_id": "2"
+            },
+            {
+                "model_id": "13",
+                "series_id": "2"
+            },
+            {
+                "model_id": "14",
+                "series_id": "2"
+            },
+            {
+                "model_id": "15",
+                "series_id": "2"
+            },
+            {
+                "model_id": "16",
+                "series_id": "2"
+            },
+            {
+                "model_id": "17",
+                "series_id": "2"
+            },
+            {
+                "model_id": "18",
+                "series_id": "2"
+            },
+            {
+                "model_id": "7",
+                "series_id": "3"
+            },
+            {
+                "model_id": "8",
+                "series_id": "3"
+            },
+            {
+                "model_id": "9",
+                "series_id": "3"
+            },
+            {
+                "model_id": "10",
+                "series_id": "3"
+            },
+            {
+                "model_id": "11",
+                "series_id": "3"
+            },
+            {
+                "model_id": "12",
+                "series_id": "3"
+            },
+            {
+                "model_id": "13",
+                "series_id": "3"
+            },
+            {
+                "model_id": "14",
+                "series_id": "3"
+            },
+            {
+                "model_id": "5",
+                "series_id": "4"
+            },
+            {
+                "model_id": "6",
+                "series_id": "4"
+            },
+            {
+                "model_id": "7",
+                "series_id": "4"
+            },
+            {
+                "model_id": "8",
+                "series_id": "4"
+            },
+            {
+                "model_id": "9",
+                "series_id": "4"
+            },
+            {
+                "model_id": "10",
+                "series_id": "4"
+            },
+            {
+                "model_id": "11",
+                "series_id": "4"
+            },
+            {
+                "model_id": "12",
+                "series_id": "4"
+            },
+            {
+                "model_id": "13",
+                "series_id": "4"
+            },
+            {
+                "model_id": "14",
+                "series_id": "4"
+            },
+            {
+                "model_id": "15",
+                "series_id": "4"
+            },
+            {
+                "model_id": "16",
+                "series_id": "4"
+            },
+            {
+                "model_id": "17",
+                "series_id": "4"
+            },
+            {
+                "model_id": "18",
+                "series_id": "4"
+            },
+            {
+                "model_id": "3",
+                "series_id": "5"
+            },
+            {
+                "model_id": "4",
+                "series_id": "5"
+            },
+            {
+                "model_id": "5",
+                "series_id": "5"
+            },
+            {
+                "model_id": "6",
+                "series_id": "5"
+            },
+            {
+                "model_id": "7",
+                "series_id": "5"
+            },
+            {
+                "model_id": "8",
+                "series_id": "5"
+            },
+            {
+                "model_id": "9",
+                "series_id": "5"
+            },
+            {
+                "model_id": "10",
+                "series_id": "5"
+            },
+            {
+                "model_id": "11",
+                "series_id": "5"
+            },
+            {
+                "model_id": "12",
+                "series_id": "5"
+            },
+            {
+                "model_id": "13",
+                "series_id": "5"
+            },
+            {
+                "model_id": "14",
+                "series_id": "5"
+            },
+            {
+                "model_id": "15",
+                "series_id": "5"
+            },
+            {
+                "model_id": "16",
+                "series_id": "5"
+            },
+            {
+                "model_id": "17",
+                "series_id": "5"
+            },
+            {
+                "model_id": "18",
+                "series_id": "5"
+            },
+            {
+                "model_id": "5",
+                "series_id": "6"
+            },
+            {
+                "model_id": "6",
+                "series_id": "6"
+            },
+            {
+                "model_id": "7",
+                "series_id": "6"
+            },
+            {
+                "model_id": "8",
+                "series_id": "6"
+            },
+            {
+                "model_id": "9",
+                "series_id": "6"
+            },
+            {
+                "model_id": "10",
+                "series_id": "6"
+            },
+            {
+                "model_id": "11",
+                "series_id": "6"
+            },
+            {
+                "model_id": "12",
+                "series_id": "6"
+            },
+            {
+                "model_id": "13",
+                "series_id": "6"
+            },
+            {
+                "model_id": "14",
+                "series_id": "6"
+            },
+            {
+                "model_id": "15",
+                "series_id": "6"
+            },
+            {
+                "model_id": "16",
+                "series_id": "6"
+            },
+            {
+                "model_id": "17",
+                "series_id": "6"
+            },
+            {
+                "model_id": "18",
+                "series_id": "6"
+            },
+            {
+                "model_id": "1",
+                "series_id": "7"
+            },
+            {
+                "model_id": "2",
+                "series_id": "7"
+            },
+            {
+                "model_id": "3",
+                "series_id": "7"
+            },
+            {
+                "model_id": "4",
+                "series_id": "7"
+            },
+            {
+                "model_id": "5",
+                "series_id": "7"
+            },
+            {
+                "model_id": "6",
+                "series_id": "7"
+            },
+            {
+                "model_id": "7",
+                "series_id": "7"
+            },
+            {
+                "model_id": "8",
+                "series_id": "7"
+            },
+            {
+                "model_id": "9",
+                "series_id": "7"
+            },
+            {
+                "model_id": "10",
+                "series_id": "7"
+            },
+            {
+                "model_id": "11",
+                "series_id": "7"
+            },
+            {
+                "model_id": "12",
+                "series_id": "7"
+            },
+            {
+                "model_id": "13",
+                "series_id": "7"
+            },
+            {
+                "model_id": "14",
+                "series_id": "7"
+            },
+            {
+                "model_id": "15",
+                "series_id": "7"
+            },
+            {
+                "model_id": "16",
+                "series_id": "7"
+            },
+            {
+                "model_id": "17",
+                "series_id": "7"
+            },
+            {
+                "model_id": "18",
+                "series_id": "7"
+            },
+            {
+                "model_id": "1",
+                "series_id": "8"
+            },
+            {
+                "model_id": "2",
+                "series_id": "8"
+            },
+            {
+                "model_id": "3",
+                "series_id": "8"
+            },
+            {
+                "model_id": "4",
+                "series_id": "8"
+            },
+            {
+                "model_id": "5",
+                "series_id": "8"
+            },
+            {
+                "model_id": "6",
+                "series_id": "8"
+            },
+            {
+                "model_id": "7",
+                "series_id": "8"
+            },
+            {
+                "model_id": "8",
+                "series_id": "8"
+            },
+            {
+                "model_id": "9",
+                "series_id": "8"
+            },
+            {
+                "model_id": "10",
+                "series_id": "8"
+            },
+            {
+                "model_id": "11",
+                "series_id": "8"
+            },
+            {
+                "model_id": "12",
+                "series_id": "8"
+            },
+            {
+                "model_id": "13",
+                "series_id": "8"
+            },
+            {
+                "model_id": "14",
+                "series_id": "8"
+            },
+            {
+                "model_id": "15",
+                "series_id": "8"
+            },
+            {
+                "model_id": "16",
+                "series_id": "8"
+            },
+            {
+                "model_id": "17",
+                "series_id": "8"
+            },
+            {
+                "model_id": "18",
+                "series_id": "8"
+            },
+            {
+                "model_id": "7",
+                "series_id": "9"
+            },
+            {
+                "model_id": "8",
+                "series_id": "9"
+            },
+            {
+                "model_id": "9",
+                "series_id": "9"
+            },
+            {
+                "model_id": "10",
+                "series_id": "9"
+            },
+            {
+                "model_id": "11",
+                "series_id": "9"
+            },
+            {
+                "model_id": "12",
+                "series_id": "9"
+            },
+            {
+                "model_id": "13",
+                "series_id": "9"
+            },
+            {
+                "model_id": "14",
+                "series_id": "9"
+            },
+            {
+                "model_id": "3",
+                "series_id": "10"
+            },
+            {
+                "model_id": "4",
+                "series_id": "10"
+            },
+            {
+                "model_id": "5",
+                "series_id": "10"
+            },
+            {
+                "model_id": "6",
+                "series_id": "10"
+            },
+            {
+                "model_id": "7",
+                "series_id": "10"
+            },
+            {
+                "model_id": "8",
+                "series_id": "10"
+            },
+            {
+                "model_id": "9",
+                "series_id": "10"
+            },
+            {
+                "model_id": "10",
+                "series_id": "10"
+            },
+            {
+                "model_id": "11",
+                "series_id": "10"
+            },
+            {
+                "model_id": "12",
+                "series_id": "10"
+            },
+            {
+                "model_id": "13",
+                "series_id": "10"
+            },
+            {
+                "model_id": "14",
+                "series_id": "10"
+            },
+            {
+                "model_id": "15",
+                "series_id": "10"
+            },
+            {
+                "model_id": "16",
+                "series_id": "10"
+            },
+            {
+                "model_id": "17",
+                "series_id": "10"
+            },
+            {
+                "model_id": "18",
+                "series_id": "10"
+            },
+            {
+                "model_id": "1",
+                "series_id": "11"
+            },
+            {
+                "model_id": "2",
+                "series_id": "11"
+            },
+            {
+                "model_id": "3",
+                "series_id": "11"
+            },
+            {
+                "model_id": "4",
+                "series_id": "11"
+            },
+            {
+                "model_id": "5",
+                "series_id": "11"
+            },
+            {
+                "model_id": "6",
+                "series_id": "11"
+            },
+            {
+                "model_id": "7",
+                "series_id": "11"
+            },
+            {
+                "model_id": "8",
+                "series_id": "11"
+            },
+            {
+                "model_id": "9",
+                "series_id": "11"
+            },
+            {
+                "model_id": "10",
+                "series_id": "11"
+            },
+            {
+                "model_id": "11",
+                "series_id": "11"
+            },
+            {
+                "model_id": "12",
+                "series_id": "11"
+            },
+            {
+                "model_id": "13",
+                "series_id": "11"
+            },
+            {
+                "model_id": "14",
+                "series_id": "11"
+            },
+            {
+                "model_id": "15",
+                "series_id": "11"
+            },
+            {
+                "model_id": "16",
+                "series_id": "11"
+            },
+            {
+                "model_id": "17",
+                "series_id": "11"
+            },
+            {
+                "model_id": "18",
+                "series_id": "11"
+            },
+            {
+                "model_id": "5",
+                "series_id": "12"
+            },
+            {
+                "model_id": "6",
+                "series_id": "12"
+            },
+            {
+                "model_id": "7",
+                "series_id": "12"
+            },
+            {
+                "model_id": "8",
+                "series_id": "12"
+            },
+            {
+                "model_id": "9",
+                "series_id": "12"
+            },
+            {
+                "model_id": "10",
+                "series_id": "12"
+            },
+            {
+                "model_id": "11",
+                "series_id": "12"
+            },
+            {
+                "model_id": "12",
+                "series_id": "12"
+            },
+            {
+                "model_id": "13",
+                "series_id": "12"
+            },
+            {
+                "model_id": "14",
+                "series_id": "12"
+            },
+            {
+                "model_id": "15",
+                "series_id": "12"
+            },
+            {
+                "model_id": "16",
+                "series_id": "12"
+            },
+            {
+                "model_id": "17",
+                "series_id": "12"
+            },
+            {
+                "model_id": "18",
+                "series_id": "12"
+            },
+            {
+                "model_id": "1",
+                "series_id": "13"
+            },
+            {
+                "model_id": "2",
+                "series_id": "13"
+            },
+            {
+                "model_id": "3",
+                "series_id": "13"
+            },
+            {
+                "model_id": "4",
+                "series_id": "13"
+            },
+            {
+                "model_id": "5",
+                "series_id": "13"
+            },
+            {
+                "model_id": "6",
+                "series_id": "13"
+            },
+            {
+                "model_id": "7",
+                "series_id": "13"
+            },
+            {
+                "model_id": "8",
+                "series_id": "13"
+            },
+            {
+                "model_id": "9",
+                "series_id": "13"
+            },
+            {
+                "model_id": "10",
+                "series_id": "13"
+            },
+            {
+                "model_id": "11",
+                "series_id": "13"
+            },
+            {
+                "model_id": "12",
+                "series_id": "13"
+            },
+            {
+                "model_id": "13",
+                "series_id": "13"
+            },
+            {
+                "model_id": "14",
+                "series_id": "13"
+            },
+            {
+                "model_id": "15",
+                "series_id": "13"
+            },
+            {
+                "model_id": "16",
+                "series_id": "13"
+            },
+            {
+                "model_id": "17",
+                "series_id": "13"
+            },
+            {
+                "model_id": "18",
+                "series_id": "13"
+            },
+            {
+                "model_id": "1",
+                "series_id": "14"
+            },
+            {
+                "model_id": "2",
+                "series_id": "14"
+            },
+            {
+                "model_id": "3",
+                "series_id": "14"
+            },
+            {
+                "model_id": "4",
+                "series_id": "14"
+            },
+            {
+                "model_id": "5",
+                "series_id": "14"
+            },
+            {
+                "model_id": "6",
+                "series_id": "14"
+            },
+            {
+                "model_id": "7",
+                "series_id": "14"
+            },
+            {
+                "model_id": "8",
+                "series_id": "14"
+            },
+            {
+                "model_id": "9",
+                "series_id": "14"
+            },
+            {
+                "model_id": "10",
+                "series_id": "14"
+            },
+            {
+                "model_id": "11",
+                "series_id": "14"
+            },
+            {
+                "model_id": "12",
+                "series_id": "14"
+            },
+            {
+                "model_id": "13",
+                "series_id": "14"
+            },
+            {
+                "model_id": "14",
+                "series_id": "14"
+            },
+            {
+                "model_id": "15",
+                "series_id": "14"
+            },
+            {
+                "model_id": "16",
+                "series_id": "14"
+            },
+            {
+                "model_id": "17",
+                "series_id": "14"
+            },
+            {
+                "model_id": "18",
+                "series_id": "14"
+            },
+            {
+                "model_id": "10",
+                "series_id": "15"
+            },
+            {
+                "model_id": "11",
+                "series_id": "15"
+            },
+            {
+                "model_id": "12",
+                "series_id": "15"
+            },
+            {
+                "model_id": "13",
+                "series_id": "15"
+            },
+            {
+                "model_id": "1",
+                "series_id": "16"
+            },
+            {
+                "model_id": "2",
+                "series_id": "16"
+            },
+            {
+                "model_id": "3",
+                "series_id": "16"
+            },
+            {
+                "model_id": "4",
+                "series_id": "16"
+            },
+            {
+                "model_id": "5",
+                "series_id": "16"
+            },
+            {
+                "model_id": "6",
+                "series_id": "16"
+            },
+            {
+                "model_id": "7",
+                "series_id": "16"
+            },
+            {
+                "model_id": "8",
+                "series_id": "16"
+            },
+            {
+                "model_id": "9",
+                "series_id": "16"
+            },
+            {
+                "model_id": "10",
+                "series_id": "16"
+            },
+            {
+                "model_id": "11",
+                "series_id": "16"
+            },
+            {
+                "model_id": "12",
+                "series_id": "16"
+            },
+            {
+                "model_id": "13",
+                "series_id": "16"
+            },
+            {
+                "model_id": "14",
+                "series_id": "16"
+            },
+            {
+                "model_id": "15",
+                "series_id": "16"
+            },
+            {
+                "model_id": "16",
+                "series_id": "16"
+            },
+            {
+                "model_id": "17",
+                "series_id": "16"
+            },
+            {
+                "model_id": "18",
+                "series_id": "16"
+            }
+        ]
+    },
+    {
+        "name": "phone_model_color",
+        "data": [
+            {
+                "model_id": "1",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "1",
+                "color": "gold",
+                "hex_color": "#dbcda8"
+            },
+            {
+                "model_id": "1",
+                "color": "gray",
+                "hex_color": "#afb0b5"
+            },
+            {
+                "model_id": "2",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "2",
+                "color": "gold",
+                "hex_color": "#dbcda8"
+            },
+            {
+                "model_id": "2",
+                "color": "gray",
+                "hex_color": "#afb0b5"
+            },
+            {
+                "model_id": "3",
+                "color": "jet black",
+                "hex_color": "#383636"
+            },
+            {
+                "model_id": "3",
+                "color": "black",
+                "hex_color": "#000"
+            },
+            {
+                "model_id": "3",
+                "color": "gold",
+                "hex_color": "#dbcda8"
+            },
+            {
+                "model_id": "3",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "3",
+                "color": "red",
+                "hex_color": "#dc5455"
+            },
+            {
+                "model_id": "3",
+                "color": "rose gold",
+                "hex_color": "#fad6d3"
+            },
+            {
+                "model_id": "4",
+                "color": "jet black",
+                "hex_color": "#383636"
+            },
+            {
+                "model_id": "4",
+                "color": "black",
+                "hex_color": "#000"
+            },
+            {
+                "model_id": "4",
+                "color": "gold",
+                "hex_color": "#dbcda8"
+            },
+            {
+                "model_id": "4",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "4",
+                "color": "red",
+                "hex_color": "#dc5455"
+            },
+            {
+                "model_id": "4",
+                "color": "rose gold",
+                "hex_color": "#fad6d3"
+            },
+            {
+                "model_id": "5",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "5",
+                "color": "gold",
+                "hex_color": "#f8d1bd"
+            },
+            {
+                "model_id": "5",
+                "color": "red",
+                "hex_color": "#dc5455"
+            },
+            {
+                "model_id": "5",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "6",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "6",
+                "color": "gold",
+                "hex_color": "#f8d1bd"
+            },
+            {
+                "model_id": "6",
+                "color": "red",
+                "hex_color": "#dc5455"
+            },
+            {
+                "model_id": "6",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "7",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "7",
+                "color": "green",
+                "hex_color": "#c5e7da"
+            },
+            {
+                "model_id": "7",
+                "color": "yellow",
+                "hex_color": "#ffe680"
+            },
+            {
+                "model_id": "7",
+                "color": "purple",
+                "hex_color": "#cbc6d7"
+            },
+            {
+                "model_id": "7",
+                "color": "red",
+                "hex_color": "#df3148"
+            },
+            {
+                "model_id": "7",
+                "color": "silver",
+                "hex_color": "#fcf9f3"
+            },
+            {
+                "model_id": "8",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "8",
+                "color": "green",
+                "hex_color": "#374d44"
+            },
+            {
+                "model_id": "8",
+                "color": "rose gold",
+                "hex_color": "#ffe5cd"
+            },
+            {
+                "model_id": "8",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "9",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "9",
+                "color": "green",
+                "hex_color": "#646e66"
+            },
+            {
+                "model_id": "9",
+                "color": "rose gold",
+                "hex_color": "#ffe5cd"
+            },
+            {
+                "model_id": "9",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "10",
+                "color": "white",
+                "hex_color": "#fefbf9"
+            },
+            {
+                "model_id": "10",
+                "color": "black",
+                "hex_color": "#353535"
+            },
+            {
+                "model_id": "10",
+                "color": "red",
+                "hex_color": "#e13737"
+            },
+            {
+                "model_id": "10",
+                "color": "green",
+                "hex_color": "#ddf3d8"
+            },
+            {
+                "model_id": "10",
+                "color": "blue",
+                "hex_color": "#1e588d"
+            },
+            {
+                "model_id": "11",
+                "color": "white",
+                "hex_color": "#fefbf9"
+            },
+            {
+                "model_id": "11",
+                "color": "black",
+                "hex_color": "#353535"
+            },
+            {
+                "model_id": "11",
+                "color": "red",
+                "hex_color": "#e13737"
+            },
+            {
+                "model_id": "11",
+                "color": "green",
+                "hex_color": "#ddf3d8"
+            },
+            {
+                "model_id": "11",
+                "color": "blue",
+                "hex_color": "#1e588d"
+            },
+            {
+                "model_id": "12",
+                "color": "black",
+                "hex_color": "#4b4a47"
+            },
+            {
+                "model_id": "12",
+                "color": "silver",
+                "hex_color": "#f1f1ec"
+            },
+            {
+                "model_id": "12",
+                "color": "gold",
+                "hex_color": "#fcebd3"
+            },
+            {
+                "model_id": "12",
+                "color": "blue",
+                "hex_color": "#4a6e80"
+            },
+            {
+                "model_id": "13",
+                "color": "black",
+                "hex_color": "#4b4a47"
+            },
+            {
+                "model_id": "13",
+                "color": "silver",
+                "hex_color": "#f1f1ec"
+            },
+            {
+                "model_id": "13",
+                "color": "gold",
+                "hex_color": "#fcebd3"
+            },
+            {
+                "model_id": "13",
+                "color": "blue",
+                "hex_color": "#4a6e80"
+            },
+            {
+                "model_id": "14",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "14",
+                "color": "red",
+                "hex_color": "#c8253a"
+            },
+            {
+                "model_id": "14",
+                "color": "silver",
+                "hex_color": "#f6f6f8"
+            },
+            {
+                "model_id": "15",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "15",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "16",
+                "color": "white",
+                "hex_color": "#fff"
+            },
+            {
+                "model_id": "16",
+                "color": "black",
+                "hex_color": "#000"
+            },
+            {
+                "model_id": "16",
+                "color": "blue",
+                "hex_color": "#98c2d8"
+            },
+            {
+                "model_id": "16",
+                "color": "yellow",
+                "hex_color": "#f7de68"
+            },
+            {
+                "model_id": "16",
+                "color": "coral red",
+                "hex_color": "#ea8173"
+            },
+            {
+                "model_id": "16",
+                "color": "red",
+                "hex_color": "#c63c32"
+            },
+            {
+                "model_id": "17",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "17",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "17",
+                "color": "gold",
+                "hex_color": "#ecdacd"
+            },
+            {
+                "model_id": "18",
+                "color": "space gray",
+                "hex_color": "#26252a"
+            },
+            {
+                "model_id": "18",
+                "color": "silver",
+                "hex_color": "#e5e6e8"
+            },
+            {
+                "model_id": "18",
+                "color": "gold",
+                "hex_color": "#ecdacd"
+            }
+        ]
+    }
+]

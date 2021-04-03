@@ -1,0 +1,9 @@
+[
+    {"id":"1","shell_color_chn":"黑色","shell_color_en":"black"},
+    {"id":"2","shell_color_chn":"白色","shell_color_en":"white"},
+    {"id":"3","shell_color_chn":"銀色","shell_color_en":"silver"},
+    {"id":"4","shell_color_chn":"紅色","shell_color_en":"red"},
+    {"id":"5","shell_color_chn":"黃色","shell_color_en":"yellow"},
+    {"id":"6","shell_color_chn":"藍色","shell_color_en":"blue"},
+    {"id":"7","shell_color_chn":"綠色","shell_color_en":"green"}
+]
