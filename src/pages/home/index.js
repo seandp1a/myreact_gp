@@ -12,6 +12,7 @@ import HomeGame from './HomeGame'
 
 const Home = (props) => {
   const dev = props.dev
+
   const myurl = dev ? 'myreact_gp/' : ''
   return (
     <>

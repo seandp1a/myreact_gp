@@ -1,0 +1,153 @@
+// $MYPORT: 'http://localhost:3000/myreact_gp/';
+$MYPORT: 'https://seandp1a.github.io/myreact_gp/';
+
+@media (max-width: 960px) {
+  .member-content .mob_none {
+    display: none;
+  }
+  .member-content .pc-table {
+    display: none;
+  }
+  .member-content .mob-table {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .member-content .mob-table {
+    display: none;
+  }
+}
+
+// 字型調整
+.member-content .mhead {
+  color: #707070;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.member-content .msidehead {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.member-content .mtext {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.textbold {
+  font-weight: bold;
+}
+
+.member-content .memberkv {
+  //   background: url(../../../public/img/members/memberkv.jpg);
+  background: url($MYPORT + 'img/members/login.gif');
+  height: 100%;
+}
+
+.member-content .forgetkv {
+  background: url($MYPORT + 'img/members/road.png');
+  height: 100%;
+}
+
+.member-content .registerkv {
+  background: url($MYPORT + 'img/members/car.jpg');
+  height: 100%;
+}
+
+.member-content .loginkv {
+  background: url($MYPORT + 'img/members/sunshine.jpg');
+  height: 100%;
+}
+
+.member-content .table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: #f5e4d7;
+}
+
+.member-content .colbg {
+  background: #f5e4d7;
+}
+
+.member-content .g-recaptcha {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  max-width: 240px;
+}
+
+.member-content .g-login {
+  width: 85%;
+}
+
+.member-content .breadcrumb-leftmargin {
+  margin-left: 0px;
+}
+
+.member-content .smalltext {
+  text-align: right;
+  color: red;
+  margin-top: 10px;
+}
+
+.member-content .errorText {
+  float: right;
+  color: red;
+}
+
+.member-content .successText {
+  float: right;
+  color: green;
+}
+
+.member-content .forget-text {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.member-content .text-orange {
+  color: #e4955a;
+}
+
+.member-content .marginbottom {
+  margin-bottom: 100px;
+}
+
+/* 產品預覽圖 */
+.member-content .order-product-pic {
+  width: 107px;
+  height: 135px;
+}
+.member-content .order-product-pic img {
+  height: 100%;
+  left: 25%;
+}
+
+.member-content .primary-btn-demo {
+  color: #707070;
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #ecccb3;
+  border-radius: 100px;
+}
+
+.member-content .primary-btn-demo:hover {
+  color: #707070;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #ecccb3;
+  border-radius: 100px;
+}
+
+.member-content .primary-btn-demo:focus {
+  color: #707070;
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #ecccb3;
+  border-radius: 100px;
+}

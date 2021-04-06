@@ -21,6 +21,9 @@ import CustomizeStepOne from './pages/products/customize_step_one'
 import CustomizeStepTwo from './pages/products/customize_step_two'
 import CustomizeStepThree from './pages/products/customize_step_three'
 
+import MemberLogin from './pages/members/member_login'
+import MemberRegister from './pages/members/member_register'
+
 import Example from './pages/Example'
 import NotFound from './pages/NotFound'
 
@@ -38,6 +41,7 @@ function App() {
               <Route exact path="/">
                 <Home dev={dev} />
               </Route>
+
               <Route exact path="/products">
                 <ProductsList dev={dev} />
               </Route>
@@ -56,6 +60,15 @@ function App() {
               <Route exact path="/customize/step-three">
                 <CustomizeStepThree dev={dev} />
               </Route>
+              <Route exact path="/member">
+                <MemberLogin />
+              </Route>
+              <Route exact path="/member/login" component={MemberLogin}></Route>
+              <Route
+                exact
+                path="/member/register"
+                component={MemberRegister}
+              ></Route>
               <Route path="/example">
                 <Example />
               </Route>
