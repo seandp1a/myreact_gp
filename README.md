@@ -16,7 +16,19 @@ DEMO LINK: https://seandp1a.github.io/myreact_gp
 
 ### ✓ 商品
 
+- ✓ 商品列表
+- ✓ 篩選型號、主題
+- ✓ 客製化商品列表(存在 localStorage)
+- ✓ 加入購物車(Cookie)
+
 ### ✘ 會員
+
+- ✓ 登入
+- ✓ 註冊
+- ✘ 會員資料
+- ✘ 密碼變更
+- ✘ 訂單紀錄
+- ✘ 優惠券
 
 ### ✘ 結帳
 
@@ -43,9 +55,21 @@ DEMO LINK: https://seandp1a.github.io/myreact_gp
 
 - [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-## 轉成 GitHub Page 遇到的問題：
+## Note：
 
 使用 React Router 並設 basename={process.env.PUBLIC_URL}
 故所有 Route 的 pathname 前端會有一串 "/myreact_gp"
 
 - Public 圖片位址 (因為是首頁，img 的 src 可以使用 "./img/home/....")
+
+- Unicode text JWT parser function :
+  function parseJwt (token) {
+  var base64Url = token.split('.')[1];
+  var base64 = base64Url.replace(/-/g, '+').replace(/\_/g, '/');
+  var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+  return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+
+      return JSON.parse(jsonPayload);
+
+  };
