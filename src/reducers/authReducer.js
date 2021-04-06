@@ -27,8 +27,21 @@ const authReducer = (state = false, action) => {
 
 /* Get token's payload */
 function parseTokenToMember(token) {
-  let tokenChunks = token.replace('Bearer ', '').split('.')
-  let member = JSON.parse(decodeURIComponent(escape(atob(tokenChunks[1]))))
+  var base64Url = token.split('.')[1]
+  var tokenChunks = base64Url.replace(/-/g, '+').replace(/_/g, '/')
+  var member = JSON.parse(
+    decodeURIComponent(
+      atob(tokenChunks)
+        .split('')
+        .map(function (c) {
+          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+        })
+        .join('')
+    )
+  )
+
+  // let tokenChunks = token.replace('Bearer ', '').split('.')
+  // let member = JSON.parse(decodeURIComponent(escape(atob(tokenChunks[1]))))
   member.token = token
   return member
 }

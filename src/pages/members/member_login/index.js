@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Row, Col, Form, Button } from 'react-bootstrap'
 import { withRouter } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -10,6 +10,9 @@ import { setAuth } from '../../../actions/authAction'
 
 const MemberLogin = (props) => {
   const dev = useSelector((state) => state.dev)
+  const url = dev
+    ? 'http://localhost:3000/myreact_gp/data/members.json'
+    : 'https://seandp1a.github.io/myreact_gp/data/members.json'
 
   function LoginAlert(title, text, icon, showConfirmButton, timer) {
     const Swal = require('sweetalert2')
@@ -47,37 +50,70 @@ const MemberLogin = (props) => {
     setInputs({ ...formData, googleToken: res })
   }
 
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
+        if (!userArr) {
+          localStorage.setItem('LocalAccount', JSON.stringify(data))
+        }
+      })
+  }, [])
+
   async function LoginToServer() {
     let isPass = false
+    let userData = {}
     const url = dev
       ? 'http://localhost:3000/myreact_gp/data/members.json'
       : 'https://seandp1a.github.io/myreact_gp/data/members.json'
 
     const jwt = require('jsonwebtoken')
 
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data)
-        const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
-        userArr.push(data[0])
-        userArr.forEach((v) => {
-          if (
-            formData.account === v.account &&
-            formData.password === v.password
-          )
-            isPass = true
-        })
-        if (isPass) {
-          let token = jwt.sign(data[0], 'ju4t', { expiresIn: '1d' })
-          let result = 'Bearer ' + token
-          dispatch(setAuth(result))
-          // props.history.push(dev ? '/../' : '/myreact_gp')
-          props.history.push('/')
-        } else {
-          LoginAlert('登入失敗', '帳號或密碼錯誤', 'error', false, 1600)
-        }
-      })
+    // fetch(url)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data)
+    //     const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
+    //     userArr.push(data[0])
+    //     userArr.forEach((v) => {
+    //       if (
+    //         formData.account === v.account &&
+    //         formData.password === v.password
+    //       )
+    //         isPass = true
+    //     })
+    //     if (isPass) {
+    //       console.log(data[0])
+    //       let token = jwt.sign(data[0], 'ju4t', { expiresIn: '1d' })
+    //       let result = 'Bearer ' + token
+    //       dispatch(setAuth(result))
+    //       // props.history.push(dev ? '/../' : '/myreact_gp')
+    //       props.history.push('/')
+    //     } else {
+    //       LoginAlert('登入失敗', '帳號或密碼錯誤', 'error', false, 1600)
+    //     }
+    //   })
+
+    const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
+
+    userArr.forEach((v) => {
+      if (formData.account === v.account && formData.password === v.password) {
+        isPass = true
+        userData = v
+      }
+    })
+    if (isPass) {
+      console.log(userData)
+      let token = jwt.sign(userData, 'ju4t', { expiresIn: '1d' })
+      let result = 'Bearer ' + token
+
+      dispatch(setAuth(result))
+      // props.history.push(dev ? '/../' : '/myreact_gp')
+      props.history.push('/')
+    } else {
+      LoginAlert('登入失敗', '帳號或密碼錯誤', 'error', false, 1600)
+    }
   }
   return (
     <div className="container member-content">

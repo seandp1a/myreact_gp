@@ -18,7 +18,6 @@ const MemberRegister = (props) => {
     birthday: '',
     googleToken: '',
   })
-  const [noRepeat, setNoRepeat] = useState(true)
 
   const onChangeForField = (fieldName) => (event) => {
     // checkFormData(fieldName, event.target.value);
@@ -157,64 +156,105 @@ const MemberRegister = (props) => {
       })
     }
 
-    const url = dev
-      ? 'http://localhost:3000/myreact_gp/data/members.json'
-      : 'https://seandp1a.github.io/myreact_gp/data/members.json'
+    const localAccount = JSON.parse(localStorage.getItem('LocalAccount'))
 
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        const temp = []
-        temp.push(data[0])
-        const localAccount = JSON.parse(localStorage.getItem('LocalAccount'))
+    localAccount.forEach((v) => {
+      if (formData.account === v.account) {
+        RegisterAlert('註冊失敗', '註冊帳號重複', 'error', false, 1600)
+        isRegisted = true
+      }
+    })
+    if (!isRegisted) {
+      let payload = {
+        sid: '2',
+        account: formData.account,
+        password: formData.password,
+        name: formData.name,
+        birthday: formData.birthday,
+        mobile: formData.mobile,
+      }
+      if (localAccount.length > 1) {
+        const lastSid = [[...localAccount].pop().sid]
+        const tempArr = [...localAccount]
+        payload.sid = (+lastSid + 1).toString()
+        tempArr.push(payload)
+        localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
+      } else {
+        const tempArr = [...localAccount]
+        tempArr.push(payload)
+        //To store the array in localStorage, use JSON.stringfy
+        localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
+      }
+      RegisterAlert(
+        '註冊成功',
+        '請使用註冊之帳號密碼登入',
+        'success',
+        false,
+        1600
+      )
+      setTimeout(() => {
+        props.history.push('/member/login')
+      }, 1500)
+    }
 
-        if (localAccount) {
-          localAccount.forEach((v) => {
-            temp.push(v)
-          })
-        }
-        console.log(temp)
-        temp.forEach((v) => {
-          if (formData.account === v.account) {
-            RegisterAlert('註冊失敗', '註冊帳號重複', 'error', false, 1600)
-            isRegisted = true
-          }
-        })
-        if (!isRegisted) {
-          let payload = {
-            sid: '2',
-            account: formData.account,
-            password: formData.password,
-            name: formData.name,
-            birthday: formData.birthday,
-            mobile: formData.mobile,
-          }
-          if (localAccount) {
-            const lastSid = [[...localAccount].pop().sid]
-            const tempArr = [...localAccount]
-            payload.sid = (+lastSid + 1).toString()
-            tempArr.push(payload)
-            localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
-          } else {
-            const tempArr = []
-            tempArr.push(payload)
-            //To store the array in localStorage, use JSON.stringfy
-            localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
-          }
-          RegisterAlert(
-            '註冊成功',
-            '請使用註冊之帳號密碼登入',
-            'success',
-            false,
-            1600
-          )
-          setTimeout(() => {
-            props.history.push('/member/login')
-          }, 1500)
-        }
+    // const url = dev
+    //   ? 'http://localhost:3000/myreact_gp/data/members.json'
+    //   : 'https://seandp1a.github.io/myreact_gp/data/members.json'
 
-        // console.log(localStorage.getItem('LocalAccount'))
-      })
+    // fetch(url)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     const temp = []
+    //     temp.push(data[0])
+    //     const localAccount = JSON.parse(localStorage.getItem('LocalAccount'))
+
+    //     if (localAccount) {
+    //       localAccount.forEach((v) => {
+    //         temp.push(v)
+    //       })
+    //     }
+    //     console.log(temp)
+    //     temp.forEach((v) => {
+    //       if (formData.account === v.account) {
+    //         RegisterAlert('註冊失敗', '註冊帳號重複', 'error', false, 1600)
+    //         isRegisted = true
+    //       }
+    //     })
+    //     if (!isRegisted) {
+    //       let payload = {
+    //         sid: '2',
+    //         account: formData.account,
+    //         password: formData.password,
+    //         name: formData.name,
+    //         birthday: formData.birthday,
+    //         mobile: formData.mobile,
+    //       }
+    //       if (localAccount) {
+    //         const lastSid = [[...localAccount].pop().sid]
+    //         const tempArr = [...localAccount]
+    //         payload.sid = (+lastSid + 1).toString()
+    //         tempArr.push(payload)
+    //         localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
+    //       } else {
+    //         const tempArr = []
+    //         tempArr.push(payload)
+    //         //To store the array in localStorage, use JSON.stringfy
+    //         localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
+    //       }
+    //       RegisterAlert(
+    //         '註冊成功',
+    //         '請使用註冊之帳號密碼登入',
+    //         'success',
+    //         false,
+    //         1600
+    //       )
+    //       setTimeout(() => {
+    //         props.history.push('/member/login')
+    //       }, 1500)
+    //     }
+
+    //     // console.log(localStorage.getItem('LocalAccount'))
+    //   })
   }
 
   return (
