@@ -74,7 +74,7 @@ const CustomizeStepOne = (props) => {
     fetch(myjson)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         const model_id = handleModel(phoneModelName, data[0].data)
         if (model_id != 0) {
           const temp = handleColor(model_id, data[5].data)

@@ -63,7 +63,7 @@ const ProductDetails = (props) => {
         designInfo[0].price = v.price
       }
     })
-    console.log(designInfo)
+    // console.log(designInfo)
     return designInfo[0]
   }
 

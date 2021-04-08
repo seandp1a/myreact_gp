@@ -78,7 +78,7 @@ const ProductsList = (props) => {
     fetch(myjson)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         const model_id = handleModel(phoneModelName, data[0].data)
         if (model_id != 0) {
           const temp = handleColor(model_id, data[5].data)
@@ -94,7 +94,7 @@ const ProductsList = (props) => {
     fetch(myjson)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         const model_id = handleModel(phoneModelName, data[0].data)
         if (model_id != 0) {
           const temp = handleSeries(model_id, data[4].data, data[1].data)
@@ -216,7 +216,7 @@ const ProductsList = (props) => {
     fetch(myjson)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         const model_id = handleModel(phoneModelName, data[0].data)
         if (model_id != 0) {
           const temp = handleDisplay(
@@ -226,7 +226,7 @@ const ProductsList = (props) => {
             data[2].data,
             shellSeries
           )
-          console.log(temp)
+          // console.log(temp)
           setTotalItems(temp.length)
           setTotalPages(Math.ceil(temp.length / itemsPerPage))
 

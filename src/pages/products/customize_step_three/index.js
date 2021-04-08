@@ -171,7 +171,7 @@ const CustomizeStepTwo = (props) => {
                       Cookies.set('cart_products', temp, { expires: 1 })
                     } else {
                       Cookies.set('cart_products', infoToSend, { expires: 1 })
-                      console.log(infoToSend)
+                      // console.log(infoToSend)
                     }
 
                     dispatch(increment())
