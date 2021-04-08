@@ -1,7 +1,6 @@
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
   Redirect,
 } from 'react-router-dom'
@@ -25,6 +24,15 @@ import CustomizeStepThree from './pages/products/customize_step_three'
 import MemberLogin from './pages/members/member_login'
 import MemberRegister from './pages/members/member_register'
 import MemberProfile from './pages/members/member_profile'
+import MemberPassword from './pages/members/member_password'
+
+import Order from './pages/orders/index'
+import OrderRoute from './pages/orders/OrderRout'
+// import OrderStep0 from './pages/orders/OrderStep0'
+// import OrderStep1 from './pages/orders/OrderStep1'
+// import OrderStep2 from './pages/orders/OrderStep2'
+// import OrderStep3 from './pages/orders/OrderStep3'
+// import OrderRout from './pages/orders/OrderRout'
 
 import Example from './pages/Example'
 import NotFound from './pages/NotFound'
@@ -56,6 +64,9 @@ function App() {
               <Switch>
                 <Route exact path="/">
                   <Home dev={dev} />
+                </Route>
+                <Route path="/order">
+                  <OrderRoute />
                 </Route>
 
                 <Route exact path="/products">
@@ -93,6 +104,12 @@ function App() {
                   exact
                   path="/member/profile"
                   component={MemberProfile}
+                  meta={{ auth: true }}
+                ></GuardedRoute>
+                <GuardedRoute
+                  exact
+                  path="/member/password"
+                  component={MemberPassword}
                   meta={{ auth: true }}
                 ></GuardedRoute>
                 <Route path="/example">

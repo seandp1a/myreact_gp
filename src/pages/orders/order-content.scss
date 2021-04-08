@@ -1,0 +1,471 @@
+$MYPORT: "http://localhost:3000/";
+
+.order-content {
+  color: #707070;
+}
+/* input foucus 顏色控制 */
+
+.order-content input[type="number"]:focus {
+  border-color: #f5ae79;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #f5af79;
+  outline: 0 none;
+}
+// .order-content input[type="text"]:focus,
+// .order-content input[type="password"]:focus,
+// .order-content input[type="email"]:focus,
+// .order-content input[type="url"]:focus,
+// .order-content input[type="search"]:focus,
+// .order-content input[type="tel"]:focus {
+//   border-color: #4499df;
+//   box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 8px #271e1700;
+//   outline: 0 none;
+// }
+
+/* placeholder 內文不透明度 */
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.5; /* Firefox */
+}
+
+/* 標題大小控制 */
+.order-content h1 {
+  font-size: 33px;
+  font-weight: 400;
+}
+.order-content h2 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.order-content h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+.order-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.order-content h6 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.stephr {
+  display: block;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  border: 0;
+}
+.stephr.v1 {
+  background-image: url($MYPORT + "/img/orders/STEP1.svg");
+}
+.stephr.v2 {
+  background-image: url($MYPORT + "/img/orders/STEP2.svg");
+}
+.stephr.v3 {
+  background-image: url($MYPORT + "/img/orders/STEP3.svg");
+}
+
+.order-content .gogogo {
+  font-weight: 700;
+}
+.order-content .important-btn {
+  font-weight: 700;
+}
+
+.cart-div .d-flex {
+  transition: 0.5s;
+}
+
+/* 產品預覽圖 */
+.order-product-pic {
+  width: 107px;
+  height: 135px;
+}
+.order-product-pic img {
+  height: 100%;
+  left: 25%;
+}
+
+/* 購物車 數量 樣式控制 */
+.counter button {
+  width: 20px;
+  height: 25px;
+  background-color: transparent;
+  box-sizing: content-box;
+}
+.counter button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.order-content .counter-input {
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  border: 2px solid #919191;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+/* type="number"隱藏控制bar */
+.counter-input::-webkit-outer-spin-button,
+.counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*購物車 cross btn 樣式控制 */
+.cross-btn {
+  width: 25px;
+  height: 25px;
+  box-sizing: content-box;
+}
+.cross-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.cross-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.cross-icon {
+  position: relative;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  transition: 0.2s, color 0.2s;
+}
+.cross-icon::after {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 2px #ff3a3a;
+  transition: transform 0.2s, opacity 0.2s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+.cross-icon:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.cross-icon:after {
+  transform: scale(1.2);
+}
+.cross-icon:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 購物車無內容圖片 */
+.order-banner-img {
+  width: 331px;
+  height: 440px;
+}
+
+/* 訂單備註 */
+.order-content .order-note {
+  width: 332px;
+  height: 181px;
+  font-size: 14px;
+}
+.order-content .order-note::placeholder {
+  line-height: 28px;
+}
+
+/* 優惠券控制 */
+.order-content .badge-cuppon {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  height: 26px;
+  background: #e4955a;
+  color: #fff;
+  opacity: 0.6;
+  transition: 0.2s;
+  margin: 0 0.3rem;
+  padding: 0.25em 0.8em;
+  cursor: pointer;
+}
+.badge-cuppon:hover {
+  opacity: 1;
+  color: #fff;
+}
+.badge-cuppon.active {
+  opacity: 1;
+  background: #c07c69;
+}
+.badge-cuppon.active::before {
+  content: "✓";
+  margin-right: 0.5rem;
+}
+.badge-group {
+  border: 1px solid #e4955a;
+  border-radius: 4px;
+  padding: 4px 1rem;
+  margin-left: 1rem;
+}
+
+/* 費用明細 */
+.order-cost-detail {
+  width: 410px;
+}
+
+/* STEP BANNER IMG */
+.order-step-banner {
+  width: 100%;
+  text-align: center;
+  padding: 0% 15%;
+}
+.order-step-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* order step1 form */
+.order-content .order-checkbox label {
+  width: 23rem;
+  font-size: 14px;
+}
+
+.order-price-label {
+  width: 10rem;
+  text-align: right;
+}
+
+.order-select-label {
+  font-size: 19px;
+}
+
+.order-deliver-form {
+  width: 410px;
+  margin-top: 3rem;
+}
+
+.order-deliver-form small {
+  font-size: 12px;
+}
+
+/* 詳閱購物須知 */
+.order-content .order-shop-note {
+  margin-top: 5rem;
+}
+
+.order-content .order-shop-note ul {
+  padding-left: 20px;
+}
+
+.order-content .order-shop-note ul li {
+  list-style-image: url($MYPORT + "/img/orders/cart-info-icon.svg");
+  margin: 1.5rem 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* order step2 form */
+.order-customer-detail {
+  width: 532px;
+  margin: 85px auto 0 112px;
+}
+.order-customer-detail h2 {
+  margin-bottom: 23px;
+}
+.order-customer-detail img {
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  border: 2px solid #707070;
+}
+.order-customer-detail .logout {
+  width: fit-content;
+  cursor: pointer;
+}
+.order-inline-input input {
+  width: 48%;
+}
+
+/* 回上一步 */
+a.order-last-step,
+a.order-last-step:hover {
+  text-decoration: none;
+  color: #707070;
+  font-size: 19px;
+}
+
+/* order step3 form  */
+.order-final-check {
+  margin: 6rem 0;
+  font-size: 19px;
+}
+
+.order-final-check h1 {
+  font-weight: 500;
+}
+
+.order-final-check .box {
+  border: 2px solid #e2e2e2;
+  margin: 2rem 0;
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+}
+
+.order-content .form-check-label {
+  font-size: 16px;
+}
+.myradio {
+  padding: 0 25px;
+}
+/* Jamie  modal樣式*/
+.addtocart-success-modal .modal-header {
+  border-bottom: none;
+}
+
+.addtocart-success-modal .modal-footer {
+  border-top: none;
+}
+
+.addtocart-success-modal .checkmark {
+  height: 100px;
+}
+
+.addtocart-success-modal h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.addtocart-success-modal p {
+  font-size: 19px;
+}
+
+// 信用卡MODAL
+.creditCardDIV {
+  width: 65%;
+  height: 170px;
+  position: relative;
+  //控制3D效果
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  // 點擊特效
+  transform: scale(1);
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+.creditCard {
+  border-radius: 15px;
+  background: #426da5;
+  padding: 1px;
+  color: white;
+}
+.creditCardDIV :active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.creditCardDIV.flip {
+  transform: rotateY(180deg);
+}
+
+.C-Back {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.C-Front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.C-Back {
+  backface-visibility: hidden;
+}
+
+.littleArrow {
+  font-size: 10px;
+}
+.chip {
+  width: 20%;
+  height: 35px;
+  border-radius: 6px;
+  background: rgb(238, 198, 19);
+}
+.cardNum {
+  width: fit-content;
+  padding-bottom: 0.5px;
+}
+
+.creditInput {
+  width: 70%;
+}
+
+.creditInput .d-flex {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.creditCard.C-Back {
+  padding: 1px 0;
+}
+.backLine {
+  width: 100%;
+  height: 30px;
+  background: rgb(59, 59, 59);
+}
+.backLine2 {
+  width: 40%;
+  height: 25px;
+  background: #7aa4db;
+  border-radius: 5px;
+}
+.creditInput input {
+  width: 80%;
+  padding: 0 0px 0 10px;
+}
+.creditInput input.MD {
+  width: 45%;
+}
+.creditInput input.CN {
+  width: 21%;
+  margin-left: 10px;
+}
+.creditInput input::-webkit-outer-spin-button,
+.creditInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .order-step-banner {
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+  }
+
+  .order-customer-detail {
+    width: 100%;
+    margin: 85px auto 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  .order-inline-input input {
+    width: 100%;
+    margin: 30px 0;
+  }
+}

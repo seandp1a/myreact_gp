@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Form, Button } from 'react-bootstrap'
-import { withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import '../members.scss'
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -69,31 +69,6 @@ const MemberLogin = (props) => {
       : 'https://seandp1a.github.io/myreact_gp/data/members.json'
 
     const jwt = require('jsonwebtoken')
-
-    // fetch(url)
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log(data)
-    //     const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
-    //     userArr.push(data[0])
-    //     userArr.forEach((v) => {
-    //       if (
-    //         formData.account === v.account &&
-    //         formData.password === v.password
-    //       )
-    //         isPass = true
-    //     })
-    //     if (isPass) {
-    //       console.log(data[0])
-    //       let token = jwt.sign(data[0], 'ju4t', { expiresIn: '1d' })
-    //       let result = 'Bearer ' + token
-    //       dispatch(setAuth(result))
-    //       // props.history.push(dev ? '/../' : '/myreact_gp')
-    //       props.history.push('/')
-    //     } else {
-    //       LoginAlert('登入失敗', '帳號或密碼錯誤', 'error', false, 1600)
-    //     }
-    //   })
 
     const userArr = JSON.parse(localStorage.getItem('LocalAccount'))
 
@@ -193,10 +168,10 @@ const MemberLogin = (props) => {
 
             <div className="d-flex justify-content-between mt-3">
               <div className="ml-5">
-                <a href="/member/forget">忘記密碼</a>
+                <Link to="/member/forget">忘記密碼</Link>
               </div>
               <div className="mr-5">
-                還不是會員？<a href="/member/register">立即註冊</a>
+                還不是會員？<Link to="/member/register">立即註冊</Link>
               </div>
             </div>
           </Form>

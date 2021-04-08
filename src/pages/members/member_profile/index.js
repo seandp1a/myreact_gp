@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Form, Button, ListGroup } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
-import { updateAuth } from '../../../actions/authAction'
+import { updateAuth, setAuth } from '../../../actions/authAction'
+import { Link, withRouter } from 'react-router-dom'
+import FuncList from '../components/FuncList'
+
 import '../members.scss'
 import moment from 'moment'
 
@@ -78,43 +81,82 @@ const MemberProfile = () => {
   const auth = useSelector((state) => state.auth)
   const dispatch = useDispatch()
 
+  const [UD, setUD] = useState({})
+
   /* Get member data */
-  async function getMemberProfile() {
-    const url = 'http://localhost:3310/member/profile'
-    const request = new Request(url, {
-      method: 'GET',
-      headers: new Headers({
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: auth.token,
-      }),
-    })
-    const response = await fetch(request)
-    const data = await response.json()
-
-    console.log(auth)
-    console.log(data)
-
-    if (data.body) {
-      if (data.body.birthday) {
-        data.body.birthday = moment(data.body.birthday).format('YYYY-MM-DD')
-      } else {
-        console.log('data.body.birthday : error')
+  function getMemberProfile() {
+    let userData = {}
+    JSON.parse(localStorage.getItem('LocalAccount')).forEach((v) => {
+      if (v.sid === auth.sid) {
+        userData = {
+          name: v.name,
+          birthday: v.birthday,
+          mobile: v.mobile,
+        }
+        setUD(v)
       }
-      setInputs({ ...formData, ...data.body })
+    })
+    // console.log(userData)
+
+    if (userData) {
+      if (userData.birthday) {
+        userData.birthday = moment(userData.birthday).format('YYYY-MM-DD')
+      } else {
+        console.log('userData.birthday : error')
+      }
+
+      setInputs({ ...formData, ...userData })
     } else {
-      console.log('data.body : error')
+      console.log('userData : error')
     }
   }
 
   /* Execute when init */
   useEffect(() => {
     if (auth) {
+      // console.log(auth)
       getMemberProfile()
     }
   }, [auth])
 
-  async function editMemberProfile() {
+  const HandleUpdate = (fd, ud) => {
+    if (fd.password !== ud.password) {
+      const result = { result: '密碼錯誤!' }
+      return result
+    } else {
+      if (
+        fd.name === ud.name &&
+        fd.mobile === ud.mobile &&
+        fd.birthday === ud.birthday
+      ) {
+        const result = { result: '資料未更新!' }
+        return result
+      } else {
+        ud.name = fd.name
+        ud.mobile = fd.mobile
+        ud.birthday = fd.birthday
+
+        const result = { result: '更新成功!', body: ud }
+        const tempArr = JSON.parse(localStorage.getItem('LocalAccount'))
+        tempArr.forEach((v) => {
+          if (v.sid === ud.sid) {
+            v.name = ud.name
+            v.mobile = ud.mobile
+            v.birthday = ud.birthday
+          }
+        })
+        localStorage.setItem('LocalAccount', JSON.stringify(tempArr))
+        const jwt = require('jsonwebtoken')
+        let token = jwt.sign(ud, 'ju4t', { expiresIn: '1d' })
+        let newToken = 'Bearer ' + token
+
+        dispatch(setAuth(newToken))
+        return result
+      }
+    }
+  }
+
+  function editMemberProfile() {
     let isPassCheck = true
     Object.keys(formData).forEach((fieldName) => {
       checkFormData(fieldName, formData[fieldName])
@@ -136,20 +178,7 @@ const MemberProfile = () => {
       return
     }
 
-    const url = 'http://localhost:3310/member/editprofile'
-
-    const request = new Request(url, {
-      method: 'PUT',
-      body: JSON.stringify(formData),
-      headers: new Headers({
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: auth.token,
-      }),
-    })
-
-    const response = await fetch(request)
-    const data = await response.json()
+    const data = HandleUpdate(formData, UD)
 
     function ProfileAlert(title, text, icon, showConfirmButton, timer) {
       const Swal = require('sweetalert2')
@@ -175,16 +204,17 @@ const MemberProfile = () => {
       ProfileAlert('更新失敗', '密碼錯誤', 'error', false, 1600)
     }
   }
+
   return (
     <div className="container member-content">
       <Row className="breadcrumb-leftmargin">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="/#">首頁</a>
+              <Link to="/#">首頁</Link>
             </li>
             <li className="breadcrumb-item" aria-current="page">
-              <a href="/member/profile">會員中心</a>
+              <Link to="/member/profile">會員中心</Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               會員資料
@@ -194,21 +224,7 @@ const MemberProfile = () => {
       </Row>
       <Row className="marginbottom">
         <Col md={3} lg={3} className="mob_none">
-          <span className="mhead">Hello {auth.name} !</span>
-          <ListGroup defaultActiveKey="./profile" className="mt-5">
-            <ListGroup.Item action href="./profile">
-              會員資料
-            </ListGroup.Item>
-            <ListGroup.Item action href="./password">
-              密碼變更
-            </ListGroup.Item>
-            <ListGroup.Item action href="./order">
-              訂單紀錄
-            </ListGroup.Item>
-            <ListGroup.Item action href="./coupon">
-              我的優惠券
-            </ListGroup.Item>
-          </ListGroup>
+          <FuncList authName={auth.name} DK={'./profile'} />
         </Col>
 
         <Col sm={12} md={8} lg={6} className="mx-auto">
@@ -313,4 +329,4 @@ const MemberProfile = () => {
   )
 }
 
-export default MemberProfile
+export default withRouter(MemberProfile)
