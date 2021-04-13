@@ -21,7 +21,7 @@ DEMO LINK: https://seandp1a.github.io/myreact_gp
 - ✓ 客製化商品列表(存在 localStorage)
 - ✓ 加入購物車(Cookie)
 
-### ✘ 會員
+### ✓ 會員
 
 - ✓ 登入
 - ✓ 註冊
