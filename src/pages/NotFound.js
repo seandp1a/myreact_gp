@@ -5,12 +5,12 @@ function NotFound() {
     <Container>
       <div className="container d-flex justify-content-center align-items-center flex-column flex-md-row">
         <img
-          src="img/components/404-1.png"
+          src="/myreact_gp/img/components/404-1.png"
           alt=""
           style={{ width: '273px', height: '100%', padding: '0 20px 0 0' }}
         />
         <img
-          src="img/components/404-2.png"
+          src="/myreact_gp/img/components/404-2.png"
           alt=""
           style={{ width: '268px', height: '310px', padding: '0 20px 0 0' }}
         />

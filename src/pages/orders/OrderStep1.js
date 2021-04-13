@@ -87,7 +87,8 @@ function OrderStep1(props) {
   const [cityList, setCityList] = useState()
 
   const getStore = () => {
-    fetch('http://localhost:3000/myreact_gp/data/storeData.json')
+    //'http://localhost:3000/myreact_gp/data/storeData.json'
+    fetch('https://seandp1a.github.io/myreact_gp/data/storeData.json')
       .then((response) => response.json())
       .then((data) => {
         setStoreData(data[0])

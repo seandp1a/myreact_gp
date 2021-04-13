@@ -18,26 +18,8 @@ function JNavbar(props) {
     let token = sessionStorage.getItem('JWT_TOKEN')
     if (token && token.indexOf('Bearer ') > -1) {
       dispatch(setAuth(token))
-      getMemberProfile(token)
     }
   }, [])
-
-  async function getMemberProfile(token) {
-    const url = 'http://localhost:3310/member/profile'
-    const request = new Request(url, {
-      method: 'GET',
-      headers: new Headers({
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: token,
-      }),
-    })
-    const response = await fetch(request)
-    const data = await response.json()
-    if (data.result === 'GET_MEMBER_PROFILE') {
-      dispatch(updateAuth(data.body))
-    }
-  }
 
   // set the initial bagCounter value in Redux (get value from cookies)
   useEffect(() => {
@@ -98,7 +80,6 @@ function JNavbar(props) {
       <a href="/member/profile">會員資料</a>
       <a href="/member/password">密碼變更</a>
       <a href="/member/order">訂單紀錄</a>
-      <a href="/member/coupon">我的優惠券</a>
       <a
         href="/"
         onClick={() => {
@@ -122,9 +103,6 @@ function JNavbar(props) {
       </NavDropdown.Item>
       <NavDropdown.Item as={NavLink} to="/member/order">
         訂單紀錄
-      </NavDropdown.Item>
-      <NavDropdown.Item as={NavLink} to="/member/coupon">
-        我的優惠券
       </NavDropdown.Item>
       <NavDropdown.Divider />
       <NavDropdown.Item
@@ -358,13 +336,13 @@ function JNavbar(props) {
                     客製化工作室
                   </Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="mx-3 mt-1">
-                  <Nav.Link as={NavLink} to="/social">
+                <Nav.Item className="mx-3 mt-1 ">
+                  <Nav.Link as={NavLink} to="/social" className="disabled">
                     人氣王
                   </Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="mx-3 mt-1">
-                  <Nav.Link as={NavLink} to="/gameindex">
+                <Nav.Item className="mx-3 mt-1 ">
+                  <Nav.Link as={NavLink} to="/gameindex" className="disabled">
                     期間限定活動
                   </Nav.Link>
                 </Nav.Item>
@@ -430,7 +408,14 @@ function JNavbar(props) {
                     style={{ width: '20px', height: '20px' }}
                     dangerouslySetInnerHTML={{ __html: icon_bag }}
                   />
-                  <a href="/order/step1" className=" nav-bag-link">
+                  <a
+                    href="/order/step1"
+                    className=" nav-bag-link"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      props.history.push('/order/step1')
+                    }}
+                  >
                     Bag({bagCounter})
                   </a>
                 </button>

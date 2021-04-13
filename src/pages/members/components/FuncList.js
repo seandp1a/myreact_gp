@@ -43,16 +43,6 @@ const FuncList = (props) => {
         >
           訂單紀錄
         </ListGroup.Item>
-        <ListGroup.Item
-          action
-          href="./coupon"
-          onClick={(e) => {
-            e.preventDefault()
-            handlePUSH('./coupon')
-          }}
-        >
-          我的優惠券
-        </ListGroup.Item>
       </ListGroup>
     </>
   )

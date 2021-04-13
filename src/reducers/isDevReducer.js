@@ -1,4 +1,4 @@
-const isDevReducer = (state = true, action) => {
+const isDevReducer = (state = false, action) => {
   // npm run deploy
   switch (action.type) {
     case 'YES':

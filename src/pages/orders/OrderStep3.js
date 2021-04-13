@@ -70,7 +70,7 @@ function OrderStep3(props) {
       status: '1',
       discount: orderDetail.discount,
       receipt: orderDetail.receipt,
-      created_at: moment(new Date()).format('yyyy-MM-dd HH:mm:ss'),
+      created_at: moment(new Date()).format('YYYY-MM-DD HH:mm:ss'),
       unique_id: OrderID,
     }
     const newOD = cartList.map((v) => {
@@ -86,8 +86,6 @@ function OrderStep3(props) {
       }
       return temp
     })
-    console.log('newOL', newOL)
-    console.log('newOD', newOD)
 
     let tempL = OrderList ? [...OrderList] : []
     tempL.push(newOL)

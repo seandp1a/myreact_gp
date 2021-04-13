@@ -26,13 +26,9 @@ import MemberRegister from './pages/members/member_register'
 import MemberProfile from './pages/members/member_profile'
 import MemberPassword from './pages/members/member_password'
 
-import Order from './pages/orders/index'
 import OrderRoute from './pages/orders/OrderRout'
-// import OrderStep0 from './pages/orders/OrderStep0'
-// import OrderStep1 from './pages/orders/OrderStep1'
-// import OrderStep2 from './pages/orders/OrderStep2'
-// import OrderStep3 from './pages/orders/OrderStep3'
-// import OrderRout from './pages/orders/OrderRout'
+import MemberOrder from './pages/members/member_order'
+import MemberOrderdDtail from './pages/members/member_orderdetail'
 
 import Example from './pages/Example'
 import NotFound from './pages/NotFound'
@@ -110,6 +106,18 @@ function App() {
                   exact
                   path="/member/password"
                   component={MemberPassword}
+                  meta={{ auth: true }}
+                ></GuardedRoute>
+                <GuardedRoute
+                  exact
+                  path="/member/order"
+                  component={MemberOrder}
+                  meta={{ auth: true }}
+                ></GuardedRoute>
+                <GuardedRoute
+                  exact
+                  path="/member/orderdetail/:orderid"
+                  component={MemberOrderdDtail}
                   meta={{ auth: true }}
                 ></GuardedRoute>
                 <Route path="/example">
